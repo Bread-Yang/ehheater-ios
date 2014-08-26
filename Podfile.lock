@@ -1,0 +1,13 @@
+PODS:
+  - MMProgressHUD (0.2.2)
+  - Reachability (3.1.1)
+
+DEPENDENCIES:
+  - MMProgressHUD (= 0.2.2)
+  - Reachability (= 3.1.1)
+
+SPEC CHECKSUMS:
+  MMProgressHUD: 47a0f18cafc2998b1a2174e42cb097b9aac6090b
+  Reachability: 8e9635e3cb4f98e7f825e51147f677ecc694d0e7
+
+COCOAPODS: 0.32.1

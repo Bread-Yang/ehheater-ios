@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A565765319AAE0E100E16C4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A565765219AAE0E100E16C4B /* Foundation.framework */; };
+		A565765519AAE0E100E16C4B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A565765419AAE0E100E16C4B /* CoreGraphics.framework */; };
+		A565765719AAE0E100E16C4B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A565765619AAE0E100E16C4B /* UIKit.framework */; };
+		A565765919AAE0E100E16C4B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A565765819AAE0E100E16C4B /* CoreData.framework */; };
+		A565765F19AAE0E100E16C4B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A565765D19AAE0E100E16C4B /* InfoPlist.strings */; };
+		A565766119AAE0E100E16C4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A565766019AAE0E100E16C4B /* main.m */; };
+		A565766519AAE0E100E16C4B /* EHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A565766419AAE0E100E16C4B /* EHAppDelegate.m */; };
+		A565766819AAE0E100E16C4B /* EHHeater_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A565766619AAE0E100E16C4B /* EHHeater_ios.xcdatamodeld */; };
+		A565766A19AAE0E100E16C4B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A565766919AAE0E100E16C4B /* Images.xcassets */; };
+		A565767119AAE0E100E16C4B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A565767019AAE0E100E16C4B /* XCTest.framework */; };
+		A565767219AAE0E100E16C4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A565765219AAE0E100E16C4B /* Foundation.framework */; };
+		A565767319AAE0E100E16C4B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A565765619AAE0E100E16C4B /* UIKit.framework */; };
+		A565767419AAE0E100E16C4B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A565765819AAE0E100E16C4B /* CoreData.framework */; };
+		A565767C19AAE0E100E16C4B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A565767A19AAE0E100E16C4B /* InfoPlist.strings */; };
+		A565767E19AAE0E100E16C4B /* EHHeater_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A565767D19AAE0E100E16C4B /* EHHeater_iosTests.m */; };
+		A565768A19AAE46200E16C4B /* EHHeaterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A565768919AAE46200E16C4B /* EHHeaterVC.m */; };
+		A565769019AAE72F00E16C4B /* EHMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A565768E19AAE72F00E16C4B /* EHMainVC.m */; };
+		A565769119AAE72F00E16C4B /* EHMainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A565768F19AAE72F00E16C4B /* EHMainVC.xib */; };
+		A565769719AB19F400E16C4B /* ControllerOpenUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A565769619AB19F400E16C4B /* ControllerOpenUtil.m */; };
+		A565769919AB3A8400E16C4B /* xUtility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A565769819AB3A8400E16C4B /* xUtility.framework */; };
+		A5D087CA19AC8F59002300C0 /* localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5D087CC19AC8F59002300C0 /* localization.strings */; };
+		A5D67EF819AB3E08008EBB43 /* NSObject+XPG.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D67EF719AB3E08008EBB43 /* NSObject+XPG.m */; };
+		A5D67EFB19AB4054008EBB43 /* UIView+XPG.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D67EFA19AB4054008EBB43 /* UIView+XPG.m */; };
+		A5D67EFE19AB405E008EBB43 /* UIColor+XPG.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D67EFD19AB405E008EBB43 /* UIColor+XPG.m */; };
+		A5D67F0119AB4064008EBB43 /* UIButton+XPG.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D67F0019AB4064008EBB43 /* UIButton+XPG.m */; };
+		A5D67F0419AB423D008EBB43 /* UIImage+XPG.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D67F0319AB423D008EBB43 /* UIImage+XPG.m */; };
+		F9EC23ED4DA4422C8EA3154D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4F09DA2A2441A5B32867C5 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A565767519AAE0E100E16C4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A565764719AAE0E100E16C4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A565764E19AAE0E100E16C4B;
+			remoteInfo = "EHHeater-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D4F09DA2A2441A5B32867C5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A565764F19AAE0E100E16C4B /* EHHeater-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EHHeater-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A565765219AAE0E100E16C4B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A565765419AAE0E100E16C4B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A565765619AAE0E100E16C4B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A565765819AAE0E100E16C4B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A565765C19AAE0E100E16C4B /* EHHeater-ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EHHeater-ios-Info.plist"; sourceTree = "<group>"; };
+		A565765E19AAE0E100E16C4B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A565766019AAE0E100E16C4B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A565766219AAE0E100E16C4B /* EHHeater-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EHHeater-ios-Prefix.pch"; sourceTree = "<group>"; };
+		A565766319AAE0E100E16C4B /* EHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHAppDelegate.h; sourceTree = "<group>"; };
+		A565766419AAE0E100E16C4B /* EHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHAppDelegate.m; sourceTree = "<group>"; };
+		A565766719AAE0E100E16C4B /* EHHeater_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EHHeater_ios.xcdatamodel; sourceTree = "<group>"; };
+		A565766919AAE0E100E16C4B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A565766F19AAE0E100E16C4B /* EHHeater-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EHHeater-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A565767019AAE0E100E16C4B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A565767919AAE0E100E16C4B /* EHHeater-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EHHeater-iosTests-Info.plist"; sourceTree = "<group>"; };
+		A565767B19AAE0E100E16C4B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A565767D19AAE0E100E16C4B /* EHHeater_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHHeater_iosTests.m; sourceTree = "<group>"; };
+		A565768819AAE46200E16C4B /* EHHeaterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHHeaterVC.h; sourceTree = "<group>"; };
+		A565768919AAE46200E16C4B /* EHHeaterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHHeaterVC.m; sourceTree = "<group>"; };
+		A565768D19AAE72F00E16C4B /* EHMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHMainVC.h; sourceTree = "<group>"; };
+		A565768E19AAE72F00E16C4B /* EHMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHMainVC.m; sourceTree = "<group>"; };
+		A565768F19AAE72F00E16C4B /* EHMainVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EHMainVC.xib; sourceTree = "<group>"; };
+		A565769219AAF17900E16C4B /* EHConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHConstant.h; sourceTree = "<group>"; };
+		A565769519AB19F400E16C4B /* ControllerOpenUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerOpenUtil.h; sourceTree = "<group>"; };
+		A565769619AB19F400E16C4B /* ControllerOpenUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerOpenUtil.m; sourceTree = "<group>"; };
+		A565769819AB3A8400E16C4B /* xUtility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = xUtility.framework; path = "EHHeater-ios/Utilities/xUtility/build/Debug-iphoneos/xUtility.framework"; sourceTree = "<group>"; };
+		A5D087BE19AC62C2002300C0 /* EHLocalizableKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHLocalizableKeys.h; sourceTree = "<group>"; };
+		A5D087C219AC632D002300C0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		A5D087C419AC632D002300C0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		A5D087CB19AC8F59002300C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/localization.strings; sourceTree = "<group>"; };
+		A5D087CD19AC8F5A002300C0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/localization.strings"; sourceTree = "<group>"; };
+		A5D67EF619AB3E08008EBB43 /* NSObject+XPG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+XPG.h"; sourceTree = "<group>"; };
+		A5D67EF719AB3E08008EBB43 /* NSObject+XPG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XPG.m"; sourceTree = "<group>"; };
+		A5D67EF919AB4054008EBB43 /* UIView+XPG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XPG.h"; sourceTree = "<group>"; };
+		A5D67EFA19AB4054008EBB43 /* UIView+XPG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XPG.m"; sourceTree = "<group>"; };
+		A5D67EFC19AB405E008EBB43 /* UIColor+XPG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+XPG.h"; sourceTree = "<group>"; };
+		A5D67EFD19AB405E008EBB43 /* UIColor+XPG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+XPG.m"; sourceTree = "<group>"; };
+		A5D67EFF19AB4064008EBB43 /* UIButton+XPG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+XPG.h"; sourceTree = "<group>"; };
+		A5D67F0019AB4064008EBB43 /* UIButton+XPG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+XPG.m"; sourceTree = "<group>"; };
+		A5D67F0219AB423D008EBB43 /* UIImage+XPG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XPG.h"; sourceTree = "<group>"; };
+		A5D67F0319AB423D008EBB43 /* UIImage+XPG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XPG.m"; sourceTree = "<group>"; };
+		F230089679BA442582BCA354 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A565764C19AAE0E100E16C4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A565769919AB3A8400E16C4B /* xUtility.framework in Frameworks */,
+				A565765519AAE0E100E16C4B /* CoreGraphics.framework in Frameworks */,
+				A565765919AAE0E100E16C4B /* CoreData.framework in Frameworks */,
+				A565765719AAE0E100E16C4B /* UIKit.framework in Frameworks */,
+				A565765319AAE0E100E16C4B /* Foundation.framework in Frameworks */,
+				F9EC23ED4DA4422C8EA3154D /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A565766C19AAE0E100E16C4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A565767119AAE0E100E16C4B /* XCTest.framework in Frameworks */,
+				A565767419AAE0E100E16C4B /* CoreData.framework in Frameworks */,
+				A565767319AAE0E100E16C4B /* UIKit.framework in Frameworks */,
+				A565767219AAE0E100E16C4B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A565764619AAE0E100E16C4B = {
+			isa = PBXGroup;
+			children = (
+				A565765A19AAE0E100E16C4B /* EHHeater-ios */,
+				A565767719AAE0E100E16C4B /* EHHeater-iosTests */,
+				A565765119AAE0E100E16C4B /* Frameworks */,
+				A565765019AAE0E100E16C4B /* Products */,
+				F230089679BA442582BCA354 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		A565765019AAE0E100E16C4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A565764F19AAE0E100E16C4B /* EHHeater-ios.app */,
+				A565766F19AAE0E100E16C4B /* EHHeater-iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A565765119AAE0E100E16C4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A565769819AB3A8400E16C4B /* xUtility.framework */,
+				A565765219AAE0E100E16C4B /* Foundation.framework */,
+				A565765419AAE0E100E16C4B /* CoreGraphics.framework */,
+				A565765619AAE0E100E16C4B /* UIKit.framework */,
+				A565765819AAE0E100E16C4B /* CoreData.framework */,
+				A565767019AAE0E100E16C4B /* XCTest.framework */,
+				0D4F09DA2A2441A5B32867C5 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A565765A19AAE0E100E16C4B /* EHHeater-ios */ = {
+			isa = PBXGroup;
+			children = (
+				A565769319AB197700E16C4B /* Utilities */,
+				A565768719AAE42F00E16C4B /* ViewControllers */,
+				A565766319AAE0E100E16C4B /* EHAppDelegate.h */,
+				A565766419AAE0E100E16C4B /* EHAppDelegate.m */,
+				A565766919AAE0E100E16C4B /* Images.xcassets */,
+				A565766619AAE0E100E16C4B /* EHHeater_ios.xcdatamodeld */,
+				A565765B19AAE0E100E16C4B /* Supporting Files */,
+				A565768B19AAE5AE00E16C4B /* Resources */,
+			);
+			path = "EHHeater-ios";
+			sourceTree = "<group>";
+		};
+		A565765B19AAE0E100E16C4B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A565765C19AAE0E100E16C4B /* EHHeater-ios-Info.plist */,
+				A565765D19AAE0E100E16C4B /* InfoPlist.strings */,
+				A565766019AAE0E100E16C4B /* main.m */,
+				A565766219AAE0E100E16C4B /* EHHeater-ios-Prefix.pch */,
+				A565769219AAF17900E16C4B /* EHConstant.h */,
+				A5D087BE19AC62C2002300C0 /* EHLocalizableKeys.h */,
+				A5D087CC19AC8F59002300C0 /* localization.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A565767719AAE0E100E16C4B /* EHHeater-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				A565767D19AAE0E100E16C4B /* EHHeater_iosTests.m */,
+				A565767819AAE0E100E16C4B /* Supporting Files */,
+			);
+			path = "EHHeater-iosTests";
+			sourceTree = "<group>";
+		};
+		A565767819AAE0E100E16C4B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A565767919AAE0E100E16C4B /* EHHeater-iosTests-Info.plist */,
+				A565767A19AAE0E100E16C4B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A565768719AAE42F00E16C4B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A565768C19AAE6F900E16C4B /* MainViewController */,
+				A565768819AAE46200E16C4B /* EHHeaterVC.h */,
+				A565768919AAE46200E16C4B /* EHHeaterVC.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A565768B19AAE5AE00E16C4B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A5D087C519AC66EB002300C0 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A565768C19AAE6F900E16C4B /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A565768D19AAE72F00E16C4B /* EHMainVC.h */,
+				A565768E19AAE72F00E16C4B /* EHMainVC.m */,
+				A565768F19AAE72F00E16C4B /* EHMainVC.xib */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		A565769319AB197700E16C4B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A5D67EF519AB3DFF008EBB43 /* Category */,
+				A565769419AB19D800E16C4B /* Misc */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A565769419AB19D800E16C4B /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				A565769519AB19F400E16C4B /* ControllerOpenUtil.h */,
+				A565769619AB19F400E16C4B /* ControllerOpenUtil.m */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		A5D087C519AC66EB002300C0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A5D087C619AC66F3002300C0 /* 1x */,
+				A5D087C719AC66FA002300C0 /* 2x */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		A5D087C619AC66F3002300C0 /* 1x */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 1x;
+			sourceTree = "<group>";
+		};
+		A5D087C719AC66FA002300C0 /* 2x */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 2x;
+			sourceTree = "<group>";
+		};
+		A5D67EF519AB3DFF008EBB43 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A5D67EF619AB3E08008EBB43 /* NSObject+XPG.h */,
+				A5D67EF719AB3E08008EBB43 /* NSObject+XPG.m */,
+				A5D67EFC19AB405E008EBB43 /* UIColor+XPG.h */,
+				A5D67EFD19AB405E008EBB43 /* UIColor+XPG.m */,
+				A5D67F0219AB423D008EBB43 /* UIImage+XPG.h */,
+				A5D67F0319AB423D008EBB43 /* UIImage+XPG.m */,
+				A5D67EF919AB4054008EBB43 /* UIView+XPG.h */,
+				A5D67EFA19AB4054008EBB43 /* UIView+XPG.m */,
+				A5D67EFF19AB4064008EBB43 /* UIButton+XPG.h */,
+				A5D67F0019AB4064008EBB43 /* UIButton+XPG.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A565764E19AAE0E100E16C4B /* EHHeater-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A565768119AAE0E100E16C4B /* Build configuration list for PBXNativeTarget "EHHeater-ios" */;
+			buildPhases = (
+				8ECCB868D4434E838D4E5CF1 /* Check Pods Manifest.lock */,
+				A565764B19AAE0E100E16C4B /* Sources */,
+				A565764C19AAE0E100E16C4B /* Frameworks */,
+				A565764D19AAE0E100E16C4B /* Resources */,
+				1F2241D2295D441292D88754 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EHHeater-ios";
+			productName = "EHHeater-ios";
+			productReference = A565764F19AAE0E100E16C4B /* EHHeater-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A565766E19AAE0E100E16C4B /* EHHeater-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A565768419AAE0E100E16C4B /* Build configuration list for PBXNativeTarget "EHHeater-iosTests" */;
+			buildPhases = (
+				A565766B19AAE0E100E16C4B /* Sources */,
+				A565766C19AAE0E100E16C4B /* Frameworks */,
+				A565766D19AAE0E100E16C4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A565767619AAE0E100E16C4B /* PBXTargetDependency */,
+			);
+			name = "EHHeater-iosTests";
+			productName = "EHHeater-iosTests";
+			productReference = A565766F19AAE0E100E16C4B /* EHHeater-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A565764719AAE0E100E16C4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EH;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = danplin;
+				TargetAttributes = {
+					A565766E19AAE0E100E16C4B = {
+						TestTargetID = A565764E19AAE0E100E16C4B;
+					};
+				};
+			};
+			buildConfigurationList = A565764A19AAE0E100E16C4B /* Build configuration list for PBXProject "EHHeater-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+			);
+			mainGroup = A565764619AAE0E100E16C4B;
+			productRefGroup = A565765019AAE0E100E16C4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A565764E19AAE0E100E16C4B /* EHHeater-ios */,
+				A565766E19AAE0E100E16C4B /* EHHeater-iosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A565764D19AAE0E100E16C4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A565769119AAE72F00E16C4B /* EHMainVC.xib in Resources */,
+				A5D087CA19AC8F59002300C0 /* localization.strings in Resources */,
+				A565765F19AAE0E100E16C4B /* InfoPlist.strings in Resources */,
+				A565766A19AAE0E100E16C4B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A565766D19AAE0E100E16C4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A565767C19AAE0E100E16C4B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F2241D2295D441292D88754 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8ECCB868D4434E838D4E5CF1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A565764B19AAE0E100E16C4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A565766119AAE0E100E16C4B /* main.m in Sources */,
+				A5D67EF819AB3E08008EBB43 /* NSObject+XPG.m in Sources */,
+				A5D67EFB19AB4054008EBB43 /* UIView+XPG.m in Sources */,
+				A565766819AAE0E100E16C4B /* EHHeater_ios.xcdatamodeld in Sources */,
+				A5D67F0419AB423D008EBB43 /* UIImage+XPG.m in Sources */,
+				A5D67EFE19AB405E008EBB43 /* UIColor+XPG.m in Sources */,
+				A5D67F0119AB4064008EBB43 /* UIButton+XPG.m in Sources */,
+				A565768A19AAE46200E16C4B /* EHHeaterVC.m in Sources */,
+				A565769019AAE72F00E16C4B /* EHMainVC.m in Sources */,
+				A565766519AAE0E100E16C4B /* EHAppDelegate.m in Sources */,
+				A565769719AB19F400E16C4B /* ControllerOpenUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A565766B19AAE0E100E16C4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A565767E19AAE0E100E16C4B /* EHHeater_iosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A565767619AAE0E100E16C4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A565764E19AAE0E100E16C4B /* EHHeater-ios */;
+			targetProxy = A565767519AAE0E100E16C4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A565765D19AAE0E100E16C4B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A565765E19AAE0E100E16C4B /* en */,
+				A5D087C219AC632D002300C0 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A565767A19AAE0E100E16C4B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A565767B19AAE0E100E16C4B /* en */,
+				A5D087C419AC632D002300C0 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A5D087CC19AC8F59002300C0 /* localization.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5D087CB19AC8F59002300C0 /* en */,
+				A5D087CD19AC8F5A002300C0 /* zh-Hans */,
+			);
+			name = localization.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A565767F19AAE0E100E16C4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A565768019AAE0E100E16C4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A565768219AAE0E100E16C4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F230089679BA442582BCA354 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EHHeater-ios/Utilities/xUtility/build/Debug-iphoneos",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EHHeater-ios/EHHeater-ios-Prefix.pch";
+				INFOPLIST_FILE = "EHHeater-ios/EHHeater-ios-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "EDA3252A-19F2-4CE5-A402-10494A601574";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/EHHeater-ios/Utilities/xUtility\"/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A565768319AAE0E100E16C4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F230089679BA442582BCA354 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EHHeater-ios/Utilities/xUtility/build/Debug-iphoneos",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EHHeater-ios/EHHeater-ios-Prefix.pch";
+				INFOPLIST_FILE = "EHHeater-ios/EHHeater-ios-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "EDA3252A-19F2-4CE5-A402-10494A601574";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/EHHeater-ios/Utilities/xUtility\"/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A565768519AAE0E100E16C4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EHHeater-ios.app/EHHeater-ios";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EHHeater-ios/EHHeater-ios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "EHHeater-iosTests/EHHeater-iosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A565768619AAE0E100E16C4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EHHeater-ios.app/EHHeater-ios";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EHHeater-ios/EHHeater-ios-Prefix.pch";
+				INFOPLIST_FILE = "EHHeater-iosTests/EHHeater-iosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A565764A19AAE0E100E16C4B /* Build configuration list for PBXProject "EHHeater-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A565767F19AAE0E100E16C4B /* Debug */,
+				A565768019AAE0E100E16C4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A565768119AAE0E100E16C4B /* Build configuration list for PBXNativeTarget "EHHeater-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A565768219AAE0E100E16C4B /* Debug */,
+				A565768319AAE0E100E16C4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A565768419AAE0E100E16C4B /* Build configuration list for PBXNativeTarget "EHHeater-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A565768519AAE0E100E16C4B /* Debug */,
+				A565768619AAE0E100E16C4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A565766619AAE0E100E16C4B /* EHHeater_ios.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A565766719AAE0E100E16C4B /* EHHeater_ios.xcdatamodel */,
+			);
+			currentVersion = A565766719AAE0E100E16C4B /* EHHeater_ios.xcdatamodel */;
+			path = EHHeater_ios.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A565764719AAE0E100E16C4B /* Project object */;
+}

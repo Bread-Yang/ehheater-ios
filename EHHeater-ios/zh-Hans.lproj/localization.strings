@@ -1,0 +1,15 @@
+/* 
+  localization.strings
+  EHHeater-ios
+
+  Created by Lin Dan on 14-8-26.
+  Copyright (c) 2014年 danplin. All rights reserved.
+*/
+
+
+
+
+/**
+ * 导航栏标题
+ */
+"EH_Main_NAV_Title"     = "万和热水器";
