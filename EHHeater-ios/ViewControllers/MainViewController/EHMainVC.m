@@ -10,6 +10,8 @@
 
 @interface EHMainVC ()
 
+@property (nonatomic, strong) UIButton *button;
+
 @end
 
 @implementation EHMainVC
@@ -31,6 +33,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self setTitle:i18n_Text(EH_Main_NAV_Title)];
+    
+    self.button = [UIButton buttonWithType:UIButtonTypeSystem];
+    self.button.translatesAutoresizingMaskIntoConstraints = NO;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
