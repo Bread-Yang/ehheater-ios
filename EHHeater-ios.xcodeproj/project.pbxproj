@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5371393B19B7162E00878CB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5371393A19B7162E00878CB0 /* Main.storyboard */; };
+		53D2991419B8017C0081224A /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D2991119B8017C0081224A /* IIViewDeckController.m */; };
+		53D2991519B8017C0081224A /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D2991319B8017C0081224A /* IIWrapController.m */; };
+		53D2991719B801890081224A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D2991619B801890081224A /* QuartzCore.framework */; };
+		53D2991B19B8037D0081224A /* EHLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D2991A19B8037D0081224A /* EHLoginVC.m */; };
 		A565765319AAE0E100E16C4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A565765219AAE0E100E16C4B /* Foundation.framework */; };
 		A565765519AAE0E100E16C4B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A565765419AAE0E100E16C4B /* CoreGraphics.framework */; };
 		A565765719AAE0E100E16C4B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A565765619AAE0E100E16C4B /* UIKit.framework */; };
@@ -22,7 +27,7 @@
 		A565767419AAE0E100E16C4B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A565765819AAE0E100E16C4B /* CoreData.framework */; };
 		A565767C19AAE0E100E16C4B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A565767A19AAE0E100E16C4B /* InfoPlist.strings */; };
 		A565767E19AAE0E100E16C4B /* EHHeater_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A565767D19AAE0E100E16C4B /* EHHeater_iosTests.m */; };
-		A565768A19AAE46200E16C4B /* EHHeaterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A565768919AAE46200E16C4B /* EHHeaterVC.m */; };
+		A565768A19AAE46200E16C4B /* EHHeaterBasicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A565768919AAE46200E16C4B /* EHHeaterBasicVC.m */; };
 		A565769019AAE72F00E16C4B /* EHMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A565768E19AAE72F00E16C4B /* EHMainVC.m */; };
 		A565769119AAE72F00E16C4B /* EHMainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A565768F19AAE72F00E16C4B /* EHMainVC.xib */; };
 		A565769719AB19F400E16C4B /* ControllerOpenUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A565769619AB19F400E16C4B /* ControllerOpenUtil.m */; };
@@ -48,6 +53,14 @@
 
 /* Begin PBXFileReference section */
 		0D4F09DA2A2441A5B32867C5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5371393A19B7162E00878CB0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		53D2991019B8017C0081224A /* IIViewDeckController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIViewDeckController.h; sourceTree = "<group>"; };
+		53D2991119B8017C0081224A /* IIViewDeckController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIViewDeckController.m; sourceTree = "<group>"; };
+		53D2991219B8017C0081224A /* IIWrapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIWrapController.h; sourceTree = "<group>"; };
+		53D2991319B8017C0081224A /* IIWrapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIWrapController.m; sourceTree = "<group>"; };
+		53D2991619B801890081224A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		53D2991919B8037D0081224A /* EHLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHLoginVC.h; sourceTree = "<group>"; };
+		53D2991A19B8037D0081224A /* EHLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHLoginVC.m; sourceTree = "<group>"; };
 		A565764F19AAE0E100E16C4B /* EHHeater-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EHHeater-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A565765219AAE0E100E16C4B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A565765419AAE0E100E16C4B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,8 +79,8 @@
 		A565767919AAE0E100E16C4B /* EHHeater-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EHHeater-iosTests-Info.plist"; sourceTree = "<group>"; };
 		A565767B19AAE0E100E16C4B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A565767D19AAE0E100E16C4B /* EHHeater_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHHeater_iosTests.m; sourceTree = "<group>"; };
-		A565768819AAE46200E16C4B /* EHHeaterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHHeaterVC.h; sourceTree = "<group>"; };
-		A565768919AAE46200E16C4B /* EHHeaterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHHeaterVC.m; sourceTree = "<group>"; };
+		A565768819AAE46200E16C4B /* EHHeaterBasicVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHHeaterBasicVC.h; sourceTree = "<group>"; };
+		A565768919AAE46200E16C4B /* EHHeaterBasicVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHHeaterBasicVC.m; sourceTree = "<group>"; };
 		A565768D19AAE72F00E16C4B /* EHMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHMainVC.h; sourceTree = "<group>"; };
 		A565768E19AAE72F00E16C4B /* EHMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHMainVC.m; sourceTree = "<group>"; };
 		A565768F19AAE72F00E16C4B /* EHMainVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EHMainVC.xib; sourceTree = "<group>"; };
@@ -98,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53D2991719B801890081224A /* QuartzCore.framework in Frameworks */,
 				A565769919AB3A8400E16C4B /* xUtility.framework in Frameworks */,
 				A565765519AAE0E100E16C4B /* CoreGraphics.framework in Frameworks */,
 				A565765919AAE0E100E16C4B /* CoreData.framework in Frameworks */,
@@ -121,6 +135,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5371393D19B7217000878CB0 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		53D2990E19B801570081224A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				53D2990F19B801710081224A /* IIViewDeck */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		53D2990F19B801710081224A /* IIViewDeck */ = {
+			isa = PBXGroup;
+			children = (
+				53D2991019B8017C0081224A /* IIViewDeckController.h */,
+				53D2991119B8017C0081224A /* IIViewDeckController.m */,
+				53D2991219B8017C0081224A /* IIWrapController.h */,
+				53D2991319B8017C0081224A /* IIWrapController.m */,
+			);
+			path = IIViewDeck;
+			sourceTree = "<group>";
+		};
+		53D2991819B802A50081224A /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				53D2991919B8037D0081224A /* EHLoginVC.h */,
+				53D2991A19B8037D0081224A /* EHLoginVC.m */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
 		A565764619AAE0E100E16C4B = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +193,7 @@
 		A565765119AAE0E100E16C4B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				53D2991619B801890081224A /* QuartzCore.framework */,
 				A565769819AB3A8400E16C4B /* xUtility.framework */,
 				A565765219AAE0E100E16C4B /* Foundation.framework */,
 				A565765419AAE0E100E16C4B /* CoreGraphics.framework */,
@@ -158,10 +208,12 @@
 		A565765A19AAE0E100E16C4B /* EHHeater-ios */ = {
 			isa = PBXGroup;
 			children = (
+				5371393D19B7217000878CB0 /* Lib */,
 				A565769319AB197700E16C4B /* Utilities */,
 				A565768719AAE42F00E16C4B /* ViewControllers */,
 				A565766319AAE0E100E16C4B /* EHAppDelegate.h */,
 				A565766419AAE0E100E16C4B /* EHAppDelegate.m */,
+				5371393A19B7162E00878CB0 /* Main.storyboard */,
 				A565766919AAE0E100E16C4B /* Images.xcassets */,
 				A565766619AAE0E100E16C4B /* EHHeater_ios.xcdatamodeld */,
 				A565765B19AAE0E100E16C4B /* Supporting Files */,
@@ -205,9 +257,10 @@
 		A565768719AAE42F00E16C4B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A565768819AAE46200E16C4B /* EHHeaterBasicVC.h */,
+				A565768919AAE46200E16C4B /* EHHeaterBasicVC.m */,
+				53D2991819B802A50081224A /* Register */,
 				A565768C19AAE6F900E16C4B /* MainViewController */,
-				A565768819AAE46200E16C4B /* EHHeaterVC.h */,
-				A565768919AAE46200E16C4B /* EHHeaterVC.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -233,6 +286,7 @@
 		A565769319AB197700E16C4B /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				53D2990E19B801570081224A /* Views */,
 				A5D67EF519AB3DFF008EBB43 /* Category */,
 				A565769419AB19D800E16C4B /* Misc */,
 			);
@@ -368,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A565769119AAE72F00E16C4B /* EHMainVC.xib in Resources */,
+				5371393B19B7162E00878CB0 /* Main.storyboard in Resources */,
 				A5D087CA19AC8F59002300C0 /* localization.strings in Resources */,
 				A565765F19AAE0E100E16C4B /* InfoPlist.strings in Resources */,
 				A565766A19AAE0E100E16C4B /* Images.xcassets in Resources */,
@@ -427,9 +482,12 @@
 				A5D67EFB19AB4054008EBB43 /* UIView+XPG.m in Sources */,
 				A565766819AAE0E100E16C4B /* EHHeater_ios.xcdatamodeld in Sources */,
 				A5D67F0419AB423D008EBB43 /* UIImage+XPG.m in Sources */,
+				53D2991419B8017C0081224A /* IIViewDeckController.m in Sources */,
+				53D2991519B8017C0081224A /* IIWrapController.m in Sources */,
+				53D2991B19B8037D0081224A /* EHLoginVC.m in Sources */,
 				A5D67EFE19AB405E008EBB43 /* UIColor+XPG.m in Sources */,
 				A5D67F0119AB4064008EBB43 /* UIButton+XPG.m in Sources */,
-				A565768A19AAE46200E16C4B /* EHHeaterVC.m in Sources */,
+				A565768A19AAE46200E16C4B /* EHHeaterBasicVC.m in Sources */,
 				A565769019AAE72F00E16C4B /* EHMainVC.m in Sources */,
 				A565766519AAE0E100E16C4B /* EHAppDelegate.m in Sources */,
 				A565769719AB19F400E16C4B /* ControllerOpenUtil.m in Sources */,

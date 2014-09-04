@@ -36,6 +36,7 @@
     
     self.button = [UIButton buttonWithType:UIButtonTypeSystem];
     self.button.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.navigationController setNavigationBarHidden:YES];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

@@ -1,13 +1,13 @@
 //
-//  EHMainVC.h
+//  EHLoginVC.h
 //  EHHeater-ios
 //
-//  Created by Lin Dan on 14-8-25.
+//  Created by Danplin on 14-9-4.
 //  Copyright (c) 2014年 danplin. All rights reserved.
 //
 
 #import "EHHeaterBasicVC.h"
 
-@interface EHMainVC : EHHeaterBasicVC
+@interface EHLoginVC : EHHeaterBasicVC
 
 @end
