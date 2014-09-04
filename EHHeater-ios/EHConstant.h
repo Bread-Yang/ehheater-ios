@@ -14,6 +14,7 @@
  */
 #import "xUtility.h"
 #import "EHLocalizableKeys.h"
+#import "iOSTool.h"
 
 #import "NSObject+XPG.h"
 #import "UIColor+XPG.h"
@@ -29,5 +30,13 @@
 #else
 #define EHLog(...) {}
 #endif
+
+
+/**
+ * Storyboard 界面跳转segue ID
+ */
+#define kLogin_2_Register           @"goToRegister"
+#define kRegister_2_Init            @"register2Init"
+#define kInit_2_Connect             @"init2Connect"
 
 #endif

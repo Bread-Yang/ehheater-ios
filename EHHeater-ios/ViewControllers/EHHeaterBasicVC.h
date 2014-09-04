@@ -17,9 +17,16 @@
 /**
  * 导航栏相关
  */
-@property (nonatomic, weak) UIButton *navLeftBtn;
-@property (nonatomic, weak) UIButton *navRightBtn;
-- (void)ehNavigationItemPressed:(UIButton *)item;
+@property (nonatomic, weak) IBOutlet UIView *ehStatusbar;       //当iOS7时，显示此条，已让statusbar看起来是黑色的 !!
+@property (nonatomic, weak) IBOutlet UIButton *navLeftBtn;
+@property (nonatomic, weak) IBOutlet UILabel *navTitleLabel;
+@property (nonatomic, weak) IBOutlet UIButton *navRightBtn;
+- (IBAction)ehNavigationItemPressed:(UIButton *)item;
 - (void)ehSetUpNavigationItems;
+
+/**
+ *  设置相关
+ */
+- (void)configerSubViews;
 
 @end

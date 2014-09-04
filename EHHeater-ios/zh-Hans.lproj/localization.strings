@@ -10,6 +10,31 @@
 
 
 /**
- * 导航栏标题
+ *  简单通用
  */
-"EH_Main_NAV_Title"     = "万和热水器";
+"EH_Cancel"                     = "取消";
+
+/**
+ * 登录、开机界面
+ */
+"EH_Main_NAV_Title"             = "万和热水器";
+"EH_LoginAccount_Placeholder"   = "请输入您的手机号";
+"EH_LoginPassword_Placeholder"  = "密码";
+"EH_LoginButton_Title"          = "登录";
+"EH_ConfigerTip_String"         = "如果您购买了新设备，请进行设备配置";
+"EH_ConfigerButton_Title"       = "配置新设备";
+
+/**
+ *  注册和配置流程
+ */
+"EH_Register_NAV_Title"         = "账号注册";
+"EH_RGTip_String"               = "注册账号将与设备绑定，绑定后即可远程操控设备";
+"EH_RGAccount_Placeholder"      = "请输入您的手机号";
+"EH_RGPassword_Placeholder"     = "密码";
+"EH_RGShowPassword_String"      = "显示密码";
+"EH_RGNextButton_Title"         = "下一步";
+
+"EH_Init_NAV_Title"             = "配置热水器";
+"EH_Init_TipString"             = "请站在热水器旁，保证热水器的电源已经连接。";
+"EH_Init_TipHightlightString"   = "电源";
+"EH_Init_NotConnect_Tip"        = "手机还未连接WiFi，请先连接WiFi，连接后返回该界面，将自动跳转到下一步";

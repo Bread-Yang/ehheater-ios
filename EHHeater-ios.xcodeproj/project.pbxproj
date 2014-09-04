@@ -12,6 +12,13 @@
 		53D2991519B8017C0081224A /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D2991319B8017C0081224A /* IIWrapController.m */; };
 		53D2991719B801890081224A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D2991619B801890081224A /* QuartzCore.framework */; };
 		53D2991B19B8037D0081224A /* EHLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D2991A19B8037D0081224A /* EHLoginVC.m */; };
+		53D2991E19B810260081224A /* EHRegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D2991D19B810260081224A /* EHRegisterVC.m */; };
+		53D2992119B83CAD0081224A /* iOSTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D2992019B83CAD0081224A /* iOSTool.m */; };
+		53D2992419B852B50081224A /* EHInitHeaterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D2992319B852B50081224A /* EHInitHeaterVC.m */; };
+		53D2992719B853C60081224A /* EHConnectNetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D2992619B853C60081224A /* EHConnectNetVC.m */; };
+		53D2992A19B85A710081224A /* LDNetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D2992919B85A710081224A /* LDNetworkUtil.m */; };
+		53D2992E19B8616D0081224A /* EHNoConectWifiAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D2992D19B8616D0081224A /* EHNoConectWifiAlert.m */; };
+		53D2993019B8617D0081224A /* EHNoConectWifiAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53D2992F19B8617D0081224A /* EHNoConectWifiAlert.xib */; };
 		A565765319AAE0E100E16C4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A565765219AAE0E100E16C4B /* Foundation.framework */; };
 		A565765519AAE0E100E16C4B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A565765419AAE0E100E16C4B /* CoreGraphics.framework */; };
 		A565765719AAE0E100E16C4B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A565765619AAE0E100E16C4B /* UIKit.framework */; };
@@ -61,6 +68,19 @@
 		53D2991619B801890081224A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		53D2991919B8037D0081224A /* EHLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHLoginVC.h; sourceTree = "<group>"; };
 		53D2991A19B8037D0081224A /* EHLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHLoginVC.m; sourceTree = "<group>"; };
+		53D2991C19B810260081224A /* EHRegisterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHRegisterVC.h; sourceTree = "<group>"; };
+		53D2991D19B810260081224A /* EHRegisterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHRegisterVC.m; sourceTree = "<group>"; };
+		53D2991F19B83CAD0081224A /* iOSTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSTool.h; sourceTree = "<group>"; };
+		53D2992019B83CAD0081224A /* iOSTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSTool.m; sourceTree = "<group>"; };
+		53D2992219B852B50081224A /* EHInitHeaterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHInitHeaterVC.h; sourceTree = "<group>"; };
+		53D2992319B852B50081224A /* EHInitHeaterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHInitHeaterVC.m; sourceTree = "<group>"; };
+		53D2992519B853C60081224A /* EHConnectNetVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHConnectNetVC.h; sourceTree = "<group>"; };
+		53D2992619B853C60081224A /* EHConnectNetVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHConnectNetVC.m; sourceTree = "<group>"; };
+		53D2992819B85A710081224A /* LDNetworkUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDNetworkUtil.h; sourceTree = "<group>"; };
+		53D2992919B85A710081224A /* LDNetworkUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDNetworkUtil.m; sourceTree = "<group>"; };
+		53D2992C19B8616D0081224A /* EHNoConectWifiAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHNoConectWifiAlert.h; sourceTree = "<group>"; };
+		53D2992D19B8616D0081224A /* EHNoConectWifiAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHNoConectWifiAlert.m; sourceTree = "<group>"; };
+		53D2992F19B8617D0081224A /* EHNoConectWifiAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EHNoConectWifiAlert.xib; sourceTree = "<group>"; };
 		A565764F19AAE0E100E16C4B /* EHHeater-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EHHeater-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A565765219AAE0E100E16C4B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A565765419AAE0E100E16C4B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -164,10 +184,27 @@
 		53D2991819B802A50081224A /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				53D2992B19B85C740081224A /* CustomViews */,
 				53D2991919B8037D0081224A /* EHLoginVC.h */,
 				53D2991A19B8037D0081224A /* EHLoginVC.m */,
+				53D2991C19B810260081224A /* EHRegisterVC.h */,
+				53D2991D19B810260081224A /* EHRegisterVC.m */,
+				53D2992219B852B50081224A /* EHInitHeaterVC.h */,
+				53D2992319B852B50081224A /* EHInitHeaterVC.m */,
+				53D2992519B853C60081224A /* EHConnectNetVC.h */,
+				53D2992619B853C60081224A /* EHConnectNetVC.m */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		53D2992B19B85C740081224A /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				53D2992C19B8616D0081224A /* EHNoConectWifiAlert.h */,
+				53D2992D19B8616D0081224A /* EHNoConectWifiAlert.m */,
+				53D2992F19B8617D0081224A /* EHNoConectWifiAlert.xib */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		A565764619AAE0E100E16C4B = {
@@ -298,6 +335,10 @@
 			children = (
 				A565769519AB19F400E16C4B /* ControllerOpenUtil.h */,
 				A565769619AB19F400E16C4B /* ControllerOpenUtil.m */,
+				53D2991F19B83CAD0081224A /* iOSTool.h */,
+				53D2992019B83CAD0081224A /* iOSTool.m */,
+				53D2992819B85A710081224A /* LDNetworkUtil.h */,
+				53D2992919B85A710081224A /* LDNetworkUtil.m */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -422,6 +463,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A565769119AAE72F00E16C4B /* EHMainVC.xib in Resources */,
+				53D2993019B8617D0081224A /* EHNoConectWifiAlert.xib in Resources */,
 				5371393B19B7162E00878CB0 /* Main.storyboard in Resources */,
 				A5D087CA19AC8F59002300C0 /* localization.strings in Resources */,
 				A565765F19AAE0E100E16C4B /* InfoPlist.strings in Resources */,
@@ -481,6 +523,7 @@
 				A5D67EF819AB3E08008EBB43 /* NSObject+XPG.m in Sources */,
 				A5D67EFB19AB4054008EBB43 /* UIView+XPG.m in Sources */,
 				A565766819AAE0E100E16C4B /* EHHeater_ios.xcdatamodeld in Sources */,
+				53D2991E19B810260081224A /* EHRegisterVC.m in Sources */,
 				A5D67F0419AB423D008EBB43 /* UIImage+XPG.m in Sources */,
 				53D2991419B8017C0081224A /* IIViewDeckController.m in Sources */,
 				53D2991519B8017C0081224A /* IIWrapController.m in Sources */,
@@ -489,7 +532,12 @@
 				A5D67F0119AB4064008EBB43 /* UIButton+XPG.m in Sources */,
 				A565768A19AAE46200E16C4B /* EHHeaterBasicVC.m in Sources */,
 				A565769019AAE72F00E16C4B /* EHMainVC.m in Sources */,
+				53D2992E19B8616D0081224A /* EHNoConectWifiAlert.m in Sources */,
+				53D2992119B83CAD0081224A /* iOSTool.m in Sources */,
+				53D2992719B853C60081224A /* EHConnectNetVC.m in Sources */,
+				53D2992A19B85A710081224A /* LDNetworkUtil.m in Sources */,
 				A565766519AAE0E100E16C4B /* EHAppDelegate.m in Sources */,
+				53D2992419B852B50081224A /* EHInitHeaterVC.m in Sources */,
 				A565769719AB19F400E16C4B /* ControllerOpenUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
