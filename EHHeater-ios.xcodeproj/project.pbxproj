@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5371393B19B7162E00878CB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5371393A19B7162E00878CB0 /* Main.storyboard */; };
+		53BDC9F219B96213001EA312 /* EHNoAnimatePushSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BDC9F119B96213001EA312 /* EHNoAnimatePushSegue.m */; };
+		53BDC9F819B97167001EA312 /* EHConfigerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BDC9F719B97167001EA312 /* EHConfigerVC.m */; };
+		53D1630519B98EE500667363 /* EHConfigerResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D1630419B98EE500667363 /* EHConfigerResultVC.m */; };
+		53D1630819B9A03900667363 /* EHMainControlVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D1630719B9A03900667363 /* EHMainControlVC.m */; };
 		53D2991419B8017C0081224A /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D2991119B8017C0081224A /* IIViewDeckController.m */; };
 		53D2991519B8017C0081224A /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D2991319B8017C0081224A /* IIWrapController.m */; };
 		53D2991719B801890081224A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D2991619B801890081224A /* QuartzCore.framework */; };
@@ -19,6 +23,10 @@
 		53D2992A19B85A710081224A /* LDNetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D2992919B85A710081224A /* LDNetworkUtil.m */; };
 		53D2992E19B8616D0081224A /* EHNoConectWifiAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D2992D19B8616D0081224A /* EHNoConectWifiAlert.m */; };
 		53D2993019B8617D0081224A /* EHNoConectWifiAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53D2992F19B8617D0081224A /* EHNoConectWifiAlert.xib */; };
+		53D6387219B9A27600EE12EB /* EHMoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D6387119B9A27600EE12EB /* EHMoreVC.m */; };
+		53D6387519B9ADE500EE12EB /* EHLeftRightContainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D6387419B9ADE500EE12EB /* EHLeftRightContainVC.m */; };
+		53D6387A19B9B9DC00EE12EB /* EHMoreListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D6387819B9B9DC00EE12EB /* EHMoreListCell.m */; };
+		53D6387B19B9B9DC00EE12EB /* EHMoreListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53D6387919B9B9DC00EE12EB /* EHMoreListCell.xib */; };
 		A565765319AAE0E100E16C4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A565765219AAE0E100E16C4B /* Foundation.framework */; };
 		A565765519AAE0E100E16C4B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A565765419AAE0E100E16C4B /* CoreGraphics.framework */; };
 		A565765719AAE0E100E16C4B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A565765619AAE0E100E16C4B /* UIKit.framework */; };
@@ -36,7 +44,6 @@
 		A565767E19AAE0E100E16C4B /* EHHeater_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A565767D19AAE0E100E16C4B /* EHHeater_iosTests.m */; };
 		A565768A19AAE46200E16C4B /* EHHeaterBasicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A565768919AAE46200E16C4B /* EHHeaterBasicVC.m */; };
 		A565769019AAE72F00E16C4B /* EHMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A565768E19AAE72F00E16C4B /* EHMainVC.m */; };
-		A565769119AAE72F00E16C4B /* EHMainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A565768F19AAE72F00E16C4B /* EHMainVC.xib */; };
 		A565769719AB19F400E16C4B /* ControllerOpenUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A565769619AB19F400E16C4B /* ControllerOpenUtil.m */; };
 		A565769919AB3A8400E16C4B /* xUtility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A565769819AB3A8400E16C4B /* xUtility.framework */; };
 		A5D087CA19AC8F59002300C0 /* localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5D087CC19AC8F59002300C0 /* localization.strings */; };
@@ -61,6 +68,14 @@
 /* Begin PBXFileReference section */
 		0D4F09DA2A2441A5B32867C5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5371393A19B7162E00878CB0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		53BDC9F019B96213001EA312 /* EHNoAnimatePushSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHNoAnimatePushSegue.h; sourceTree = "<group>"; };
+		53BDC9F119B96213001EA312 /* EHNoAnimatePushSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHNoAnimatePushSegue.m; sourceTree = "<group>"; };
+		53BDC9F619B97167001EA312 /* EHConfigerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHConfigerVC.h; sourceTree = "<group>"; };
+		53BDC9F719B97167001EA312 /* EHConfigerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHConfigerVC.m; sourceTree = "<group>"; };
+		53D1630319B98EE500667363 /* EHConfigerResultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHConfigerResultVC.h; sourceTree = "<group>"; };
+		53D1630419B98EE500667363 /* EHConfigerResultVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHConfigerResultVC.m; sourceTree = "<group>"; };
+		53D1630619B9A03900667363 /* EHMainControlVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHMainControlVC.h; sourceTree = "<group>"; };
+		53D1630719B9A03900667363 /* EHMainControlVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHMainControlVC.m; sourceTree = "<group>"; };
 		53D2991019B8017C0081224A /* IIViewDeckController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIViewDeckController.h; sourceTree = "<group>"; };
 		53D2991119B8017C0081224A /* IIViewDeckController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIViewDeckController.m; sourceTree = "<group>"; };
 		53D2991219B8017C0081224A /* IIWrapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIWrapController.h; sourceTree = "<group>"; };
@@ -81,6 +96,13 @@
 		53D2992C19B8616D0081224A /* EHNoConectWifiAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHNoConectWifiAlert.h; sourceTree = "<group>"; };
 		53D2992D19B8616D0081224A /* EHNoConectWifiAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHNoConectWifiAlert.m; sourceTree = "<group>"; };
 		53D2992F19B8617D0081224A /* EHNoConectWifiAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EHNoConectWifiAlert.xib; sourceTree = "<group>"; };
+		53D6387019B9A27600EE12EB /* EHMoreVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHMoreVC.h; sourceTree = "<group>"; };
+		53D6387119B9A27600EE12EB /* EHMoreVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHMoreVC.m; sourceTree = "<group>"; };
+		53D6387319B9ADE500EE12EB /* EHLeftRightContainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHLeftRightContainVC.h; sourceTree = "<group>"; };
+		53D6387419B9ADE500EE12EB /* EHLeftRightContainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHLeftRightContainVC.m; sourceTree = "<group>"; };
+		53D6387719B9B9DC00EE12EB /* EHMoreListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHMoreListCell.h; sourceTree = "<group>"; };
+		53D6387819B9B9DC00EE12EB /* EHMoreListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHMoreListCell.m; sourceTree = "<group>"; };
+		53D6387919B9B9DC00EE12EB /* EHMoreListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EHMoreListCell.xib; sourceTree = "<group>"; };
 		A565764F19AAE0E100E16C4B /* EHHeater-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EHHeater-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A565765219AAE0E100E16C4B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A565765419AAE0E100E16C4B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -103,7 +125,6 @@
 		A565768919AAE46200E16C4B /* EHHeaterBasicVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHHeaterBasicVC.m; sourceTree = "<group>"; };
 		A565768D19AAE72F00E16C4B /* EHMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHMainVC.h; sourceTree = "<group>"; };
 		A565768E19AAE72F00E16C4B /* EHMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHMainVC.m; sourceTree = "<group>"; };
-		A565768F19AAE72F00E16C4B /* EHMainVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EHMainVC.xib; sourceTree = "<group>"; };
 		A565769219AAF17900E16C4B /* EHConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHConstant.h; sourceTree = "<group>"; };
 		A565769519AB19F400E16C4B /* ControllerOpenUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerOpenUtil.h; sourceTree = "<group>"; };
 		A565769619AB19F400E16C4B /* ControllerOpenUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerOpenUtil.m; sourceTree = "<group>"; };
@@ -162,6 +183,15 @@
 			path = Lib;
 			sourceTree = "<group>";
 		};
+		53BDC9EF19B961F4001EA312 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				53BDC9F019B96213001EA312 /* EHNoAnimatePushSegue.h */,
+				53BDC9F119B96213001EA312 /* EHNoAnimatePushSegue.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		53D2990E19B801570081224A /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +214,7 @@
 		53D2991819B802A50081224A /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				53BDC9EF19B961F4001EA312 /* Data */,
 				53D2992B19B85C740081224A /* CustomViews */,
 				53D2991919B8037D0081224A /* EHLoginVC.h */,
 				53D2991A19B8037D0081224A /* EHLoginVC.m */,
@@ -193,6 +224,10 @@
 				53D2992319B852B50081224A /* EHInitHeaterVC.m */,
 				53D2992519B853C60081224A /* EHConnectNetVC.h */,
 				53D2992619B853C60081224A /* EHConnectNetVC.m */,
+				53BDC9F619B97167001EA312 /* EHConfigerVC.h */,
+				53BDC9F719B97167001EA312 /* EHConfigerVC.m */,
+				53D1630319B98EE500667363 /* EHConfigerResultVC.h */,
+				53D1630419B98EE500667363 /* EHConfigerResultVC.m */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -205,6 +240,26 @@
 				53D2992F19B8617D0081224A /* EHNoConectWifiAlert.xib */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		53D6386F19B9A26700EE12EB /* More */ = {
+			isa = PBXGroup;
+			children = (
+				53D6387619B9B9B900EE12EB /* Views */,
+				53D6387019B9A27600EE12EB /* EHMoreVC.h */,
+				53D6387119B9A27600EE12EB /* EHMoreVC.m */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		53D6387619B9B9B900EE12EB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				53D6387719B9B9DC00EE12EB /* EHMoreListCell.h */,
+				53D6387819B9B9DC00EE12EB /* EHMoreListCell.m */,
+				53D6387919B9B9DC00EE12EB /* EHMoreListCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		A565764619AAE0E100E16C4B = {
@@ -298,6 +353,7 @@
 				A565768919AAE46200E16C4B /* EHHeaterBasicVC.m */,
 				53D2991819B802A50081224A /* Register */,
 				A565768C19AAE6F900E16C4B /* MainViewController */,
+				53D6386F19B9A26700EE12EB /* More */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -315,7 +371,10 @@
 			children = (
 				A565768D19AAE72F00E16C4B /* EHMainVC.h */,
 				A565768E19AAE72F00E16C4B /* EHMainVC.m */,
-				A565768F19AAE72F00E16C4B /* EHMainVC.xib */,
+				53D1630619B9A03900667363 /* EHMainControlVC.h */,
+				53D1630719B9A03900667363 /* EHMainControlVC.m */,
+				53D6387319B9ADE500EE12EB /* EHLeftRightContainVC.h */,
+				53D6387419B9ADE500EE12EB /* EHLeftRightContainVC.m */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
@@ -462,8 +521,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A565769119AAE72F00E16C4B /* EHMainVC.xib in Resources */,
 				53D2993019B8617D0081224A /* EHNoConectWifiAlert.xib in Resources */,
+				53D6387B19B9B9DC00EE12EB /* EHMoreListCell.xib in Resources */,
 				5371393B19B7162E00878CB0 /* Main.storyboard in Resources */,
 				A5D087CA19AC8F59002300C0 /* localization.strings in Resources */,
 				A565765F19AAE0E100E16C4B /* InfoPlist.strings in Resources */,
@@ -519,20 +578,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53D1630819B9A03900667363 /* EHMainControlVC.m in Sources */,
 				A565766119AAE0E100E16C4B /* main.m in Sources */,
 				A5D67EF819AB3E08008EBB43 /* NSObject+XPG.m in Sources */,
 				A5D67EFB19AB4054008EBB43 /* UIView+XPG.m in Sources */,
 				A565766819AAE0E100E16C4B /* EHHeater_ios.xcdatamodeld in Sources */,
+				53BDC9F219B96213001EA312 /* EHNoAnimatePushSegue.m in Sources */,
 				53D2991E19B810260081224A /* EHRegisterVC.m in Sources */,
 				A5D67F0419AB423D008EBB43 /* UIImage+XPG.m in Sources */,
+				53D1630519B98EE500667363 /* EHConfigerResultVC.m in Sources */,
 				53D2991419B8017C0081224A /* IIViewDeckController.m in Sources */,
 				53D2991519B8017C0081224A /* IIWrapController.m in Sources */,
 				53D2991B19B8037D0081224A /* EHLoginVC.m in Sources */,
 				A5D67EFE19AB405E008EBB43 /* UIColor+XPG.m in Sources */,
 				A5D67F0119AB4064008EBB43 /* UIButton+XPG.m in Sources */,
+				53BDC9F819B97167001EA312 /* EHConfigerVC.m in Sources */,
+				53D6387A19B9B9DC00EE12EB /* EHMoreListCell.m in Sources */,
 				A565768A19AAE46200E16C4B /* EHHeaterBasicVC.m in Sources */,
+				53D6387519B9ADE500EE12EB /* EHLeftRightContainVC.m in Sources */,
 				A565769019AAE72F00E16C4B /* EHMainVC.m in Sources */,
 				53D2992E19B8616D0081224A /* EHNoConectWifiAlert.m in Sources */,
+				53D6387219B9A27600EE12EB /* EHMoreVC.m in Sources */,
 				53D2992119B83CAD0081224A /* iOSTool.m in Sources */,
 				53D2992719B853C60081224A /* EHConnectNetVC.m in Sources */,
 				53D2992A19B85A710081224A /* LDNetworkUtil.m in Sources */,

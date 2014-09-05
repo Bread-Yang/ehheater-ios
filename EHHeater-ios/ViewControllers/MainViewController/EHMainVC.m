@@ -16,12 +16,6 @@
 
 @implementation EHMainVC
 
-#pragma mark -- Overrid Point
-
-- (void)ehSetUpNavigationItems{
-    //主界面不需要
-}
-
 #pragma mark -- Life cycle
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -54,11 +48,25 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark -- Action
+#pragma mark -- Overrid
 
-- (IBAction)turnOnButtonPressed:(UIButton *)sender {
+- (void)configerSubViews{
+    [super configerSubViews];
+    
+    //国际化
+}
+
+- (void)ehSetUpNavigationItems{
     
 }
+
+- (IBAction)ehNavigationItemPressed:(UIButton *)item{
+    if (item == self.navLeftBtn) {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
+
+#pragma mark -- Action
 
 
 @end

@@ -83,6 +83,12 @@
         [attribute addAttribute:NSForegroundColorAttributeName value:[UIColor orangeColor] range:hightlightRange];
         [attribute addAttribute:NSForegroundColorAttributeName value:[UIColor blackColor] range:endRange];
         //        [attribute addAttribute:NSFontAttributeName value:self.tipLabel.font range:firstRange];
+        
+        if ([iOSTool iOS6Device]) {
+            //iOS6下要加这个才会换行，草泥马的，坑爹呢
+            NSMutableParagraphStyle *paragrap = [[NSMutableParagraphStyle alloc] init];
+            [attribute addAttribute:NSParagraphStyleAttributeName value:paragrap range:fullRange];
+        }
     }
     [self.tipLabel setAttributedText:attribute];
 

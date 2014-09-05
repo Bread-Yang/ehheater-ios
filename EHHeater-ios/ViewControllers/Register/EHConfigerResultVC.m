@@ -1,29 +1,21 @@
 //
-//  EHConnectNetVC.m
+//  EHConfigerResultVC.m
 //  EHHeater-ios
 //
-//  Created by Danplin on 14-9-4.
+//  Created by Danplin on 14-9-5.
 //  Copyright (c) 2014年 danplin. All rights reserved.
 //
 
-#import "EHConnectNetVC.h"
-#import "LDNetworkUtil.h"
+#import "EHConfigerResultVC.h"
 
-@interface EHConnectNetVC ()<UITextFieldDelegate>
+@interface EHConfigerResultVC ()
 
-@property (weak, nonatomic) IBOutlet UIImageView *topImageView;
-@property (weak, nonatomic) IBOutlet UILabel *tipLabel1;
-@property (weak, nonatomic) IBOutlet UILabel *tipLabel2;
-@property (weak, nonatomic) IBOutlet UILabel *wifiNameTitleLabel;
-@property (weak, nonatomic) IBOutlet UITextField *wifiTextField;
-@property (weak, nonatomic) IBOutlet UILabel *passwordTitleLabel;
-@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
-@property (weak, nonatomic) IBOutlet UIButton *sureButton;
-
+@property (weak, nonatomic) IBOutlet UILabel *titleTipLable;
+@property (weak, nonatomic) IBOutlet UITextView *detailTipTextView;
 
 @end
 
-@implementation EHConnectNetVC
+@implementation EHConfigerResultVC
 
 #pragma mark -- Life cycle
 
@@ -54,14 +46,7 @@
     [super configerSubViews];
     //国际化
     self.title = i18n_Text(EH_Init_NAV_Title);
-    [self.tipLabel1 setText:i18n_Text(EH_Wifi_Tip1)];
-    [self.tipLabel2 setText:i18n_Text(EH_Wifi_Tip2)];
-    [self.wifiNameTitleLabel setText:i18n_Text(EH_Wifi_NameTitle)];
-    [self.passwordTitleLabel setText:i18n_Text(EH_LoginPassword_Placeholder)];
-    [self.sureButton setAllStatusTitle:i18n_Text(EH_Sure)];
-    
-    NSString *currentWifiName = [ldNetworkUtil connectedWifiName];
-    [self.wifiTextField setText:currentWifiName];
+    [self configerDetailTextView];
 }
 
 - (void)ehSetUpNavigationItems{
@@ -74,11 +59,22 @@
     }
 }
 
-#pragma mark -- UITextfieldDelegate
+#pragma mark -- Pirvate
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField{
-    [textField resignFirstResponder];
-    return YES;
+- (void)configerDetailTextView{
+    NSString *tipStr = self.detailTipTextView.text;
+    NSMutableAttributedString *attribute = [[NSMutableAttributedString alloc] initWithString:tipStr];
+    
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
+    paragraphStyle.lineHeightMultiple = 20.f;
+    paragraphStyle.maximumLineHeight = 25.f;
+    paragraphStyle.minimumLineHeight = 15.f;
+    paragraphStyle.firstLineHeadIndent = 0.0f;
+    paragraphStyle.alignment = NSTextAlignmentJustified;
+    NSRange fullRange = [tipStr rangeOfString:tipStr];
+    [attribute addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:fullRange];
+    [attribute addAttribute:NSFontAttributeName value:self.detailTipTextView.font range:fullRange];
+    [self.detailTipTextView setAttributedText:attribute];
 }
 
 /*

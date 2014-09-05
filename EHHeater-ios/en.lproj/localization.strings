@@ -13,6 +13,8 @@
  *  简单通用
  */
 "EH_Cancel"                     = "取消";
+"EH_Confirm"                    = "确认";
+"EH_Sure"                       = "确定";
 
 /**
  * 登录、开机界面
@@ -38,3 +40,25 @@
 "EH_Init_TipString"             = "请站在热水器旁，保证热水器的电源已经连接。";
 "EH_Init_TipHightlightString"   = "电源";
 "EH_Init_NotConnect_Tip"        = "手机还未连接WiFi，请先连接WiFi，连接后返回该界面，将自动跳转到下一步";
+"EH_Wifi_Tip1"                  = "请确保热水器与智能移动终端在同一无线局域网下进行连接";
+"EH_Wifi_Tip2"                  = "(无线局域网默认为智能移动终端当前正在使用的无线局域网。如需更改，请先更改智能移动终端使用的网络配置。)";
+"EH_Wifi_NameTitle"             = "网络名称";
+"EH_ConfigerTipString"          = "请长按电源键3秒，听到三声蜂鸣后松手，点击下一步。";
+"EH_ConfigerTipHightlight1"     = "3秒";
+"EH_ConfigerTipHightlight2"     = "三声";
+
+/**
+ *  更多界面
+ */
+"EH_More_SwitchHeater"          = "切换热水器";
+"EH_More_AccountManage"         = "账号管理";
+"EH_More_HeaterManage"          = "热水器管理";
+"EH_More_RemindSetting"         = "提醒设置";
+"EH_More_Help"                  = "帮助";
+"EH_More_Abount"                = "关于";
+
+
+
+
+
+

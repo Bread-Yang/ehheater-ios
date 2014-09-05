@@ -15,6 +15,11 @@
     return (sysVersion >= 7.0);
 }
 
++ (BOOL)iOS6Device{
+    double sysVersion = [[UIDevice currentDevice]systemVersion].doubleValue;
+    return ((sysVersion < 7.0) && (sysVersion >= 6.0));
+}
+
 + (BOOL)iOS5AndEalierDevice{
     double sysVersion = [[UIDevice currentDevice]systemVersion].doubleValue;
     return (sysVersion < 6.0);

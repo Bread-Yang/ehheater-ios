@@ -13,6 +13,8 @@
  *  简单通用
  */
 #define EH_Cancel                       @"EH_Cancel"
+#define EH_Confirm                      @"EH_Confirm"
+#define EH_Sure                         @"EH_Sure"
 
 /**
  * 登录、开机界面
@@ -38,5 +40,21 @@
 #define EH_Init_TipString               @"EH_Init_TipString"
 #define EH_Init_TipHightlightString     @"EH_Init_TipHightlightString"
 #define EH_Init_NotConnect_Tip          @"EH_Init_NotConnect_Tip"
+#define EH_Wifi_Tip1                    @"EH_Wifi_Tip1"
+#define EH_Wifi_Tip2                    @"EH_Wifi_Tip2"
+#define EH_Wifi_NameTitle               @"EH_Wifi_NameTitle"
+#define EH_ConfigerTipString            @"EH_ConfigerTipString"
+#define EH_ConfigerTipHightlight1       @"EH_ConfigerTipHightlight1"
+#define EH_ConfigerTipHightlight2       @"EH_ConfigerTipHightlight2"
+
+/**
+ *  更多界面
+ */
+#define EH_More_SwitchHeater            @"EH_More_SwitchHeater"
+#define EH_More_AccountManage           @"EH_More_AccountManage"
+#define EH_More_HeaterManage            @"EH_More_HeaterManage"
+#define EH_More_RemindSetting           @"EH_More_RemindSetting"
+#define EH_More_Help                    @"EH_More_Help"
+#define EH_More_Abount                  @"EH_More_Abount"
 
 #endif

@@ -14,6 +14,8 @@
 
 + (BOOL)iOS7Device;
 
++ (BOOL)iOS6Device;
+
 + (BOOL)iOS5AndEalierDevice;
 
 @end
