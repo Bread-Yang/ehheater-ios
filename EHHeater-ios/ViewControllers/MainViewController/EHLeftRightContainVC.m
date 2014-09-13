@@ -47,6 +47,11 @@
     self.deckVC = nil;
 }
 
+- (void)dealloc{
+    self.deckVC = nil;
+    EHLog(@"%s",__FUNCTION__);
+}
+
 #pragma mark -- IIViewDeckControllerDelegate
 
 - (BOOL)viewDeckController:(IIViewDeckController *)viewDeckController shouldBeginPanOverView:(UIView *)view{

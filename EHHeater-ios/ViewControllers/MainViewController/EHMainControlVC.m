@@ -7,9 +7,42 @@
 //
 
 #import "EHMainControlVC.h"
-#import "EHLeftRightContainVC.h"
 
-@interface EHMainControlVC ()
+#import "EHLeftRightContainVC.h"
+#import "EHPowerSetView.h"
+#import "EHCircleSlider.h"
+#import "EHWaveView.h"
+#import "EHBespokeVC.h"
+
+@interface EHMainControlVC ()<EHPowerSetViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UIImageView *bgImageView;
+@property (weak, nonatomic) IBOutlet UIView *modeContentView;
+@property (weak, nonatomic) IBOutlet UIImageView *modeBgImageView;
+@property (weak, nonatomic) IBOutlet UILabel *modeNameLabel;
+@property (weak, nonatomic) IBOutlet EHCircleSlider *circleSlider;
+@property (weak, nonatomic) IBOutlet UIImageView *currentTempIconView;
+@property (weak, nonatomic) IBOutlet UIView *infoContainView;
+@property (weak, nonatomic) IBOutlet UILabel *tempTitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *tempValueLabel;
+@property (weak, nonatomic) IBOutlet UILabel *tempUnitLabel;
+@property (weak, nonatomic) IBOutlet UILabel *remainWaterTitleLable;
+@property (weak, nonatomic) IBOutlet UILabel *remainWaterValueLabel;
+
+@property (weak, nonatomic) IBOutlet UIButton *topInfoButton;
+@property (weak, nonatomic) IBOutlet UILabel *topInfoLabel;
+@property (weak, nonatomic) IBOutlet UIButton *bottomInfoButton;
+@property (weak, nonatomic) IBOutlet UILabel *bottomInfoLabel;
+
+@property (weak, nonatomic) IBOutlet UIView *modeContainView;
+@property (weak, nonatomic) IBOutlet UIButton *smartModeButton;
+@property (weak, nonatomic) IBOutlet UIButton *morningBathButton;
+@property (weak, nonatomic) IBOutlet UIButton *infoModeButton;
+@property (weak, nonatomic) IBOutlet UILabel *smartModeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *morningBathLabel;
+@property (weak, nonatomic) IBOutlet UILabel *infoModeLabel;
+
+@property (nonatomic, weak) UIButton *selectButton;
 
 @end
 
@@ -38,11 +71,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc{
+    EHLog(@"%s",__FUNCTION__);
+}
+
 #pragma mark -- Overrid
 
 - (void)configerSubViews{
     [super configerSubViews];
     //国际化
+    
+    //设置属性
+    [self.infoContainView setBackgroundColor:[UIColor clearColor]];
 }
 
 - (void)ehSetUpNavigationItems{
@@ -57,6 +97,38 @@
         //关机
         [self.fatherVC.navigationController popViewControllerAnimated:YES];
     }
+}
+
+//特殊情况，需要重载
+- (UINavigationController *)navigationController{
+    if (self.fatherVC) {
+        return self.fatherVC.navigationController;
+    }
+    return [super navigationController];
+}
+
+#pragma mark -- Actions
+
+- (IBAction)modeButtonPressed:(UIButton *)sender {
+    if (self.selectButton != sender) {
+        [self.selectButton setSelected:NO];
+        [sender setSelected:YES];
+        self.selectButton = sender;
+    }
+}
+
+//设置功率按钮点击
+- (IBAction)bottomButtonPressed:(id)sender {
+    EHPowerSetView *view = [EHPowerSetView loadFromNib];
+    [view setDelegate:self];
+    [view showInAppWindow];
+}
+
+#pragma mark -- CustomViewDelegate
+
+//EHPowerSetViewDelegate
+- (void)powerSetViewDidPressedConfirm:(EHPowerSetView *)view{
+    [view dismiss];
 }
 
 /*

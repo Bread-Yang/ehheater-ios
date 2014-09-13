@@ -21,6 +21,10 @@
 
 #pragma mark -- Life cycle
 
+- (void)dealloc{
+    EHLog(@"%s",__FUNCTION__);
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

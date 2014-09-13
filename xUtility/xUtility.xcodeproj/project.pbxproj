@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		537C512F19C290C000218151 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537C512E19C290C000218151 /* Foundation.framework */; };
+		537C519919C2920700218151 /* I18NController.m in Sources */ = {isa = PBXBuildFile; fileRef = 537C515819C2920700218151 /* I18NController.m */; };
+		537C519A19C2920700218151 /* I18NUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 537C515A19C2920700218151 /* I18NUtil.m */; };
+		537C519B19C2920700218151 /* iCloudSynchronizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 537C515D19C2920700218151 /* iCloudSynchronizer.m */; };
+		537C519C19C2920700218151 /* ConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 537C516119C2920700218151 /* ConfigManager.m */; };
+		537C519D19C2920700218151 /* DateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 537C516319C2920700218151 /* DateUtil.m */; };
+		537C519E19C2920700218151 /* DeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 537C516619C2920700218151 /* DeviceUtil.m */; };
+		537C519F19C2920700218151 /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 537C516819C2920700218151 /* StringUtil.m */; };
+		537C51A019C2920700218151 /* TipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 537C516B19C2920700218151 /* TipView.m */; };
+		537C51A119C2920700218151 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 537C516F19C2920700218151 /* ioapi.c */; };
+		537C51A219C2920700218151 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 537C517119C2920700218151 /* mztools.c */; };
+		537C51A319C2920700218151 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 537C517319C2920700218151 /* unzip.c */; };
+		537C51A419C2920700218151 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 537C517519C2920700218151 /* zip.c */; };
+		537C51A519C2920700218151 /* FileInZipInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 537C517919C2920700218151 /* FileInZipInfo.m */; };
+		537C51A619C2920700218151 /* ZipException.m in Sources */ = {isa = PBXBuildFile; fileRef = 537C517B19C2920700218151 /* ZipException.m */; };
+		537C51A719C2920700218151 /* ZipFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 537C517D19C2920700218151 /* ZipFile.m */; };
+		537C51A819C2920700218151 /* ZipReadStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 537C517F19C2920700218151 /* ZipReadStream.m */; };
+		537C51A919C2920700218151 /* ZipWriteStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 537C518119C2920700218151 /* ZipWriteStream.m */; };
+		537C51AA19C2920700218151 /* adler32.c in Sources */ = {isa = PBXBuildFile; fileRef = 537C518319C2920700218151 /* adler32.c */; };
+		537C51AB19C2920700218151 /* compress.c in Sources */ = {isa = PBXBuildFile; fileRef = 537C518419C2920700218151 /* compress.c */; };
+		537C51AC19C2920700218151 /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = 537C518519C2920700218151 /* crc32.c */; };
+		537C51AD19C2920700218151 /* deflate.c in Sources */ = {isa = PBXBuildFile; fileRef = 537C518719C2920700218151 /* deflate.c */; };
+		537C51AE19C2920700218151 /* gzio.c in Sources */ = {isa = PBXBuildFile; fileRef = 537C518919C2920700218151 /* gzio.c */; };
+		537C51AF19C2920700218151 /* infback.c in Sources */ = {isa = PBXBuildFile; fileRef = 537C518A19C2920700218151 /* infback.c */; };
+		537C51B019C2920700218151 /* inffast.c in Sources */ = {isa = PBXBuildFile; fileRef = 537C518B19C2920700218151 /* inffast.c */; };
+		537C51B119C2920700218151 /* inflate.c in Sources */ = {isa = PBXBuildFile; fileRef = 537C518E19C2920700218151 /* inflate.c */; };
+		537C51B219C2920700218151 /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = 537C519019C2920700218151 /* inftrees.c */; };
+		537C51B319C2920700218151 /* trees.c in Sources */ = {isa = PBXBuildFile; fileRef = 537C519219C2920700218151 /* trees.c */; };
+		537C51B419C2920700218151 /* uncompr.c in Sources */ = {isa = PBXBuildFile; fileRef = 537C519419C2920700218151 /* uncompr.c */; };
+		537C51B519C2920700218151 /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 537C519719C2920700218151 /* zutil.c */; };
+		537C520019C2D1B200218151 /* I18NConstants.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C515619C2920700218151 /* I18NConstants.h */; };
+		537C520119C2D1B200218151 /* I18NController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C515719C2920700218151 /* I18NController.h */; };
+		537C520219C2D1B200218151 /* I18NUtil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C515919C2920700218151 /* I18NUtil.h */; };
+		537C520319C2D1B200218151 /* iCloudSynchronizer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C515C19C2920700218151 /* iCloudSynchronizer.h */; };
+		537C520419C2D1B200218151 /* Common.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C515F19C2920700218151 /* Common.h */; };
+		537C520519C2D1B200218151 /* ConfigManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C516019C2920700218151 /* ConfigManager.h */; };
+		537C520619C2D1B200218151 /* DateUtil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C516219C2920700218151 /* DateUtil.h */; };
+		537C520719C2D1B200218151 /* DateUtility.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C516419C2920700218151 /* DateUtility.h */; };
+		537C520819C2D1B200218151 /* DeviceUtil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C516519C2920700218151 /* DeviceUtil.h */; };
+		537C520919C2D1B200218151 /* StringUtil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C516719C2920700218151 /* StringUtil.h */; };
+		537C520A19C2D1B200218151 /* TipView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C516A19C2920700218151 /* TipView.h */; };
+		537C520B19C2D1B200218151 /* crypt.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C516E19C2920700218151 /* crypt.h */; };
+		537C520C19C2D1B200218151 /* ioapi.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C517019C2920700218151 /* ioapi.h */; };
+		537C520D19C2D1B200218151 /* mztools.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C517219C2920700218151 /* mztools.h */; };
+		537C520E19C2D1B200218151 /* unzip.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C517419C2920700218151 /* unzip.h */; };
+		537C520F19C2D1B200218151 /* zip.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C517619C2920700218151 /* zip.h */; };
+		537C521019C2D1B200218151 /* FileInZipInfo.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C517819C2920700218151 /* FileInZipInfo.h */; };
+		537C521119C2D1B200218151 /* ZipException.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C517A19C2920700218151 /* ZipException.h */; };
+		537C521219C2D1B200218151 /* ZipFile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C517C19C2920700218151 /* ZipFile.h */; };
+		537C521319C2D1B200218151 /* ZipReadStream.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C517E19C2920700218151 /* ZipReadStream.h */; };
+		537C521419C2D1B200218151 /* ZipWriteStream.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C518019C2920700218151 /* ZipWriteStream.h */; };
+		537C521519C2D1B200218151 /* crc32.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C518619C2920700218151 /* crc32.h */; };
+		537C521619C2D1B200218151 /* deflate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C518819C2920700218151 /* deflate.h */; };
+		537C521719C2D1B200218151 /* inffast.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C518C19C2920700218151 /* inffast.h */; };
+		537C521819C2D1B200218151 /* inffixed.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C518D19C2920700218151 /* inffixed.h */; };
+		537C521919C2D1B200218151 /* inflate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C518F19C2920700218151 /* inflate.h */; };
+		537C521A19C2D1B200218151 /* inftrees.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C519119C2920700218151 /* inftrees.h */; };
+		537C521B19C2D1B200218151 /* trees.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C519319C2920700218151 /* trees.h */; };
+		537C521C19C2D1B200218151 /* zconf.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C519519C2920700218151 /* zconf.h */; };
+		537C521D19C2D1B200218151 /* zlib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C519619C2920700218151 /* zlib.h */; };
+		537C521E19C2D1B200218151 /* zutil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C519819C2920700218151 /* zutil.h */; };
+		537C521F19C2D1B200218151 /* xUtility.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537C515419C2915900218151 /* xUtility.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		537C512919C290C000218151 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				537C520019C2D1B200218151 /* I18NConstants.h in CopyFiles */,
+				537C520119C2D1B200218151 /* I18NController.h in CopyFiles */,
+				537C520219C2D1B200218151 /* I18NUtil.h in CopyFiles */,
+				537C520319C2D1B200218151 /* iCloudSynchronizer.h in CopyFiles */,
+				537C520419C2D1B200218151 /* Common.h in CopyFiles */,
+				537C520519C2D1B200218151 /* ConfigManager.h in CopyFiles */,
+				537C520619C2D1B200218151 /* DateUtil.h in CopyFiles */,
+				537C520719C2D1B200218151 /* DateUtility.h in CopyFiles */,
+				537C520819C2D1B200218151 /* DeviceUtil.h in CopyFiles */,
+				537C520919C2D1B200218151 /* StringUtil.h in CopyFiles */,
+				537C520A19C2D1B200218151 /* TipView.h in CopyFiles */,
+				537C520B19C2D1B200218151 /* crypt.h in CopyFiles */,
+				537C520C19C2D1B200218151 /* ioapi.h in CopyFiles */,
+				537C520D19C2D1B200218151 /* mztools.h in CopyFiles */,
+				537C520E19C2D1B200218151 /* unzip.h in CopyFiles */,
+				537C520F19C2D1B200218151 /* zip.h in CopyFiles */,
+				537C521019C2D1B200218151 /* FileInZipInfo.h in CopyFiles */,
+				537C521119C2D1B200218151 /* ZipException.h in CopyFiles */,
+				537C521219C2D1B200218151 /* ZipFile.h in CopyFiles */,
+				537C521319C2D1B200218151 /* ZipReadStream.h in CopyFiles */,
+				537C521419C2D1B200218151 /* ZipWriteStream.h in CopyFiles */,
+				537C521519C2D1B200218151 /* crc32.h in CopyFiles */,
+				537C521619C2D1B200218151 /* deflate.h in CopyFiles */,
+				537C521719C2D1B200218151 /* inffast.h in CopyFiles */,
+				537C521819C2D1B200218151 /* inffixed.h in CopyFiles */,
+				537C521919C2D1B200218151 /* inflate.h in CopyFiles */,
+				537C521A19C2D1B200218151 /* inftrees.h in CopyFiles */,
+				537C521B19C2D1B200218151 /* trees.h in CopyFiles */,
+				537C521C19C2D1B200218151 /* zconf.h in CopyFiles */,
+				537C521D19C2D1B200218151 /* zlib.h in CopyFiles */,
+				537C521E19C2D1B200218151 /* zutil.h in CopyFiles */,
+				537C521F19C2D1B200218151 /* xUtility.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		537C512B19C290C000218151 /* libxUtility.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libxUtility.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		537C512E19C290C000218151 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		537C513219C290C000218151 /* xUtility-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "xUtility-Prefix.pch"; sourceTree = "<group>"; };
+		537C513F19C290C000218151 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		537C515419C2915900218151 /* xUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xUtility.h; sourceTree = "<group>"; };
+		537C515619C2920700218151 /* I18NConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = I18NConstants.h; sourceTree = "<group>"; };
+		537C515719C2920700218151 /* I18NController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = I18NController.h; sourceTree = "<group>"; };
+		537C515819C2920700218151 /* I18NController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = I18NController.m; sourceTree = "<group>"; };
+		537C515919C2920700218151 /* I18NUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = I18NUtil.h; sourceTree = "<group>"; };
+		537C515A19C2920700218151 /* I18NUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = I18NUtil.m; sourceTree = "<group>"; };
+		537C515C19C2920700218151 /* iCloudSynchronizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCloudSynchronizer.h; sourceTree = "<group>"; };
+		537C515D19C2920700218151 /* iCloudSynchronizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCloudSynchronizer.m; sourceTree = "<group>"; };
+		537C515F19C2920700218151 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		537C516019C2920700218151 /* ConfigManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigManager.h; sourceTree = "<group>"; };
+		537C516119C2920700218151 /* ConfigManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigManager.m; sourceTree = "<group>"; };
+		537C516219C2920700218151 /* DateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateUtil.h; sourceTree = "<group>"; };
+		537C516319C2920700218151 /* DateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateUtil.m; sourceTree = "<group>"; };
+		537C516419C2920700218151 /* DateUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateUtility.h; sourceTree = "<group>"; };
+		537C516519C2920700218151 /* DeviceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceUtil.h; sourceTree = "<group>"; };
+		537C516619C2920700218151 /* DeviceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceUtil.m; sourceTree = "<group>"; };
+		537C516719C2920700218151 /* StringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtil.h; sourceTree = "<group>"; };
+		537C516819C2920700218151 /* StringUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringUtil.m; sourceTree = "<group>"; };
+		537C516A19C2920700218151 /* TipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipView.h; sourceTree = "<group>"; };
+		537C516B19C2920700218151 /* TipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipView.m; sourceTree = "<group>"; };
+		537C516E19C2920700218151 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		537C516F19C2920700218151 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		537C517019C2920700218151 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		537C517119C2920700218151 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		537C517219C2920700218151 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		537C517319C2920700218151 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		537C517419C2920700218151 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		537C517519C2920700218151 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		537C517619C2920700218151 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		537C517819C2920700218151 /* FileInZipInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileInZipInfo.h; sourceTree = "<group>"; };
+		537C517919C2920700218151 /* FileInZipInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileInZipInfo.m; sourceTree = "<group>"; };
+		537C517A19C2920700218151 /* ZipException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipException.h; sourceTree = "<group>"; };
+		537C517B19C2920700218151 /* ZipException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipException.m; sourceTree = "<group>"; };
+		537C517C19C2920700218151 /* ZipFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipFile.h; sourceTree = "<group>"; };
+		537C517D19C2920700218151 /* ZipFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipFile.m; sourceTree = "<group>"; };
+		537C517E19C2920700218151 /* ZipReadStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipReadStream.h; sourceTree = "<group>"; };
+		537C517F19C2920700218151 /* ZipReadStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipReadStream.m; sourceTree = "<group>"; };
+		537C518019C2920700218151 /* ZipWriteStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipWriteStream.h; sourceTree = "<group>"; };
+		537C518119C2920700218151 /* ZipWriteStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipWriteStream.m; sourceTree = "<group>"; };
+		537C518319C2920700218151 /* adler32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = adler32.c; sourceTree = "<group>"; };
+		537C518419C2920700218151 /* compress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = compress.c; sourceTree = "<group>"; };
+		537C518519C2920700218151 /* crc32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crc32.c; sourceTree = "<group>"; };
+		537C518619C2920700218151 /* crc32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crc32.h; sourceTree = "<group>"; };
+		537C518719C2920700218151 /* deflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = deflate.c; sourceTree = "<group>"; };
+		537C518819C2920700218151 /* deflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deflate.h; sourceTree = "<group>"; };
+		537C518919C2920700218151 /* gzio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzio.c; sourceTree = "<group>"; };
+		537C518A19C2920700218151 /* infback.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = infback.c; sourceTree = "<group>"; };
+		537C518B19C2920700218151 /* inffast.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inffast.c; sourceTree = "<group>"; };
+		537C518C19C2920700218151 /* inffast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inffast.h; sourceTree = "<group>"; };
+		537C518D19C2920700218151 /* inffixed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inffixed.h; sourceTree = "<group>"; };
+		537C518E19C2920700218151 /* inflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inflate.c; sourceTree = "<group>"; };
+		537C518F19C2920700218151 /* inflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inflate.h; sourceTree = "<group>"; };
+		537C519019C2920700218151 /* inftrees.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inftrees.c; sourceTree = "<group>"; };
+		537C519119C2920700218151 /* inftrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inftrees.h; sourceTree = "<group>"; };
+		537C519219C2920700218151 /* trees.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trees.c; sourceTree = "<group>"; };
+		537C519319C2920700218151 /* trees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trees.h; sourceTree = "<group>"; };
+		537C519419C2920700218151 /* uncompr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uncompr.c; sourceTree = "<group>"; };
+		537C519519C2920700218151 /* zconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zconf.h; sourceTree = "<group>"; };
+		537C519619C2920700218151 /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
+		537C519719C2920700218151 /* zutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zutil.c; sourceTree = "<group>"; };
+		537C519819C2920700218151 /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		537C512819C290C000218151 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				537C512F19C290C000218151 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		537C512219C290C000218151 = {
+			isa = PBXGroup;
+			children = (
+				537C513019C290C000218151 /* xUtility */,
+				537C512D19C290C000218151 /* Frameworks */,
+				537C512C19C290C000218151 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		537C512C19C290C000218151 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				537C512B19C290C000218151 /* libxUtility.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		537C512D19C290C000218151 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				537C512E19C290C000218151 /* Foundation.framework */,
+				537C513F19C290C000218151 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		537C513019C290C000218151 /* xUtility */ = {
+			isa = PBXGroup;
+			children = (
+				537C515519C2920700218151 /* i18N */,
+				537C515B19C2920700218151 /* iCloud */,
+				537C515E19C2920700218151 /* Misc */,
+				537C516919C2920700218151 /* View */,
+				537C516C19C2920700218151 /* zip */,
+				537C513119C290C000218151 /* Supporting Files */,
+				537C515419C2915900218151 /* xUtility.h */,
+			);
+			path = xUtility;
+			sourceTree = "<group>";
+		};
+		537C513119C290C000218151 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				537C513219C290C000218151 /* xUtility-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		537C515519C2920700218151 /* i18N */ = {
+			isa = PBXGroup;
+			children = (
+				537C515619C2920700218151 /* I18NConstants.h */,
+				537C515719C2920700218151 /* I18NController.h */,
+				537C515819C2920700218151 /* I18NController.m */,
+				537C515919C2920700218151 /* I18NUtil.h */,
+				537C515A19C2920700218151 /* I18NUtil.m */,
+			);
+			path = i18N;
+			sourceTree = "<group>";
+		};
+		537C515B19C2920700218151 /* iCloud */ = {
+			isa = PBXGroup;
+			children = (
+				537C515C19C2920700218151 /* iCloudSynchronizer.h */,
+				537C515D19C2920700218151 /* iCloudSynchronizer.m */,
+			);
+			path = iCloud;
+			sourceTree = "<group>";
+		};
+		537C515E19C2920700218151 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				537C515F19C2920700218151 /* Common.h */,
+				537C516019C2920700218151 /* ConfigManager.h */,
+				537C516119C2920700218151 /* ConfigManager.m */,
+				537C516219C2920700218151 /* DateUtil.h */,
+				537C516319C2920700218151 /* DateUtil.m */,
+				537C516419C2920700218151 /* DateUtility.h */,
+				537C516519C2920700218151 /* DeviceUtil.h */,
+				537C516619C2920700218151 /* DeviceUtil.m */,
+				537C516719C2920700218151 /* StringUtil.h */,
+				537C516819C2920700218151 /* StringUtil.m */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		537C516919C2920700218151 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				537C516A19C2920700218151 /* TipView.h */,
+				537C516B19C2920700218151 /* TipView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		537C516C19C2920700218151 /* zip */ = {
+			isa = PBXGroup;
+			children = (
+				537C516D19C2920700218151 /* MiniZip */,
+				537C517719C2920700218151 /* Objective-Zip */,
+				537C518219C2920700218151 /* ZLib */,
+			);
+			path = zip;
+			sourceTree = "<group>";
+		};
+		537C516D19C2920700218151 /* MiniZip */ = {
+			isa = PBXGroup;
+			children = (
+				537C516E19C2920700218151 /* crypt.h */,
+				537C516F19C2920700218151 /* ioapi.c */,
+				537C517019C2920700218151 /* ioapi.h */,
+				537C517119C2920700218151 /* mztools.c */,
+				537C517219C2920700218151 /* mztools.h */,
+				537C517319C2920700218151 /* unzip.c */,
+				537C517419C2920700218151 /* unzip.h */,
+				537C517519C2920700218151 /* zip.c */,
+				537C517619C2920700218151 /* zip.h */,
+			);
+			path = MiniZip;
+			sourceTree = "<group>";
+		};
+		537C517719C2920700218151 /* Objective-Zip */ = {
+			isa = PBXGroup;
+			children = (
+				537C517819C2920700218151 /* FileInZipInfo.h */,
+				537C517919C2920700218151 /* FileInZipInfo.m */,
+				537C517A19C2920700218151 /* ZipException.h */,
+				537C517B19C2920700218151 /* ZipException.m */,
+				537C517C19C2920700218151 /* ZipFile.h */,
+				537C517D19C2920700218151 /* ZipFile.m */,
+				537C517E19C2920700218151 /* ZipReadStream.h */,
+				537C517F19C2920700218151 /* ZipReadStream.m */,
+				537C518019C2920700218151 /* ZipWriteStream.h */,
+				537C518119C2920700218151 /* ZipWriteStream.m */,
+			);
+			path = "Objective-Zip";
+			sourceTree = "<group>";
+		};
+		537C518219C2920700218151 /* ZLib */ = {
+			isa = PBXGroup;
+			children = (
+				537C518319C2920700218151 /* adler32.c */,
+				537C518419C2920700218151 /* compress.c */,
+				537C518519C2920700218151 /* crc32.c */,
+				537C518619C2920700218151 /* crc32.h */,
+				537C518719C2920700218151 /* deflate.c */,
+				537C518819C2920700218151 /* deflate.h */,
+				537C518919C2920700218151 /* gzio.c */,
+				537C518A19C2920700218151 /* infback.c */,
+				537C518B19C2920700218151 /* inffast.c */,
+				537C518C19C2920700218151 /* inffast.h */,
+				537C518D19C2920700218151 /* inffixed.h */,
+				537C518E19C2920700218151 /* inflate.c */,
+				537C518F19C2920700218151 /* inflate.h */,
+				537C519019C2920700218151 /* inftrees.c */,
+				537C519119C2920700218151 /* inftrees.h */,
+				537C519219C2920700218151 /* trees.c */,
+				537C519319C2920700218151 /* trees.h */,
+				537C519419C2920700218151 /* uncompr.c */,
+				537C519519C2920700218151 /* zconf.h */,
+				537C519619C2920700218151 /* zlib.h */,
+				537C519719C2920700218151 /* zutil.c */,
+				537C519819C2920700218151 /* zutil.h */,
+			);
+			path = ZLib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		537C512A19C290C000218151 /* xUtility */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 537C514E19C290C000218151 /* Build configuration list for PBXNativeTarget "xUtility" */;
+			buildPhases = (
+				537C512719C290C000218151 /* Sources */,
+				537C512819C290C000218151 /* Frameworks */,
+				537C512919C290C000218151 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xUtility;
+			productName = xUtility;
+			productReference = 537C512B19C290C000218151 /* libxUtility.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		537C512319C290C000218151 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = XPG;
+			};
+			buildConfigurationList = 537C512619C290C000218151 /* Build configuration list for PBXProject "xUtility" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+			);
+			mainGroup = 537C512219C290C000218151;
+			productRefGroup = 537C512C19C290C000218151 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				537C512A19C290C000218151 /* xUtility */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		537C512719C290C000218151 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				537C51AE19C2920700218151 /* gzio.c in Sources */,
+				537C51A519C2920700218151 /* FileInZipInfo.m in Sources */,
+				537C519F19C2920700218151 /* StringUtil.m in Sources */,
+				537C51A319C2920700218151 /* unzip.c in Sources */,
+				537C51B119C2920700218151 /* inflate.c in Sources */,
+				537C519919C2920700218151 /* I18NController.m in Sources */,
+				537C51B319C2920700218151 /* trees.c in Sources */,
+				537C51B019C2920700218151 /* inffast.c in Sources */,
+				537C51B519C2920700218151 /* zutil.c in Sources */,
+				537C51B219C2920700218151 /* inftrees.c in Sources */,
+				537C519D19C2920700218151 /* DateUtil.m in Sources */,
+				537C51B419C2920700218151 /* uncompr.c in Sources */,
+				537C51A819C2920700218151 /* ZipReadStream.m in Sources */,
+				537C51AB19C2920700218151 /* compress.c in Sources */,
+				537C519B19C2920700218151 /* iCloudSynchronizer.m in Sources */,
+				537C51A219C2920700218151 /* mztools.c in Sources */,
+				537C51A019C2920700218151 /* TipView.m in Sources */,
+				537C519E19C2920700218151 /* DeviceUtil.m in Sources */,
+				537C51A119C2920700218151 /* ioapi.c in Sources */,
+				537C51AA19C2920700218151 /* adler32.c in Sources */,
+				537C51AC19C2920700218151 /* crc32.c in Sources */,
+				537C51A919C2920700218151 /* ZipWriteStream.m in Sources */,
+				537C51AF19C2920700218151 /* infback.c in Sources */,
+				537C51A419C2920700218151 /* zip.c in Sources */,
+				537C51AD19C2920700218151 /* deflate.c in Sources */,
+				537C51A619C2920700218151 /* ZipException.m in Sources */,
+				537C519A19C2920700218151 /* I18NUtil.m in Sources */,
+				537C519C19C2920700218151 /* ConfigManager.m in Sources */,
+				537C51A719C2920700218151 /* ZipFile.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		537C514C19C290C000218151 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		537C514D19C290C000218151 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		537C514F19C290C000218151 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DSTROOT = /tmp/xUtility.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xUtility/xUtility-Prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		537C515019C290C000218151 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DSTROOT = /tmp/xUtility.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xUtility/xUtility-Prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		537C512619C290C000218151 /* Build configuration list for PBXProject "xUtility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				537C514C19C290C000218151 /* Debug */,
+				537C514D19C290C000218151 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		537C514E19C290C000218151 /* Build configuration list for PBXNativeTarget "xUtility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				537C514F19C290C000218151 /* Debug */,
+				537C515019C290C000218151 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 537C512319C290C000218151 /* Project object */;
+}

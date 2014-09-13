@@ -18,6 +18,7 @@
  * 导航栏相关
  */
 @property (nonatomic, weak) IBOutlet UIView *ehStatusbar;       //当iOS7时，显示此条，已让statusbar看起来是黑色的 !!
+@property (nonatomic, weak) IBOutlet UIView *navBarView;         
 @property (nonatomic, weak) IBOutlet UIButton *navLeftBtn;
 @property (nonatomic, weak) IBOutlet UILabel *navTitleLabel;
 @property (nonatomic, weak) IBOutlet UIButton *navRightBtn;

@@ -12,7 +12,7 @@
 /**
  *     Import
  */
-#import "xUtility.h"
+#import <xUtility.h>
 #import "EHLocalizableKeys.h"
 #import "iOSTool.h"
 
@@ -31,12 +31,27 @@
 #define EHLog(...) {}
 #endif
 
+/**
+ * 通知key
+ */
+#define kNotify_DidFoundDevice      @"XPG_SDK_DID_FOUND_DEVICE"
+#define kNotify_DidConnectDevice    @"XPG_SDK_DID_CONNECT_DEVICE"
+#define kNotify_DidReceiceResponse  @"XPG_SDK_DID_RECEIVE_RESPONSE"
 
 /**
  * Storyboard 界面跳转segue ID
  */
 #define kLogin_2_Register           @"goToRegister"
 #define kRegister_2_Init            @"register2Init"
+#define kLogin2MainVC               @"login2MainVC"
 #define kInit_2_Connect             @"init2Connect"
+#define kTurnOn_2_Control           @"turnOn2ControlVC"
+#define kBespoke2Edit               @"bespoke2Edit"
+
+/**
+ *  临时
+ */
+#define kTemp_Connect_MAC           @"C8934642E4C7"     //默认的链接的热水器wifi的mac地址
+#define kTemp_Port                  12416
 
 #endif

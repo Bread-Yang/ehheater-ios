@@ -85,6 +85,9 @@
     if (IS_IOS7) {
         [self.ehStatusbar setHidden:NO];
     }
+    UIImage *barImage = [UIImage imagePNGName:@"home_tab_bg"];
+    UIColor *color = [UIColor colorWithPatternImage:barImage];
+    [self.navBarView setBackgroundColor:color];
 }
 
 #pragma mark -- Private

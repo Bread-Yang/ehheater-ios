@@ -8,6 +8,9 @@
 
 #import "EHLoginVC.h"
 
+#import "EHDeviceManager.h"
+#import "EHMainVC.h"
+
 @interface EHLoginVC ()<UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *bgImageView;
@@ -72,6 +75,9 @@
 
 - (IBAction)loginButtonPressed:(id)sender {
     [self resignAllTextField];
+//    UIViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:[EHMainVC objClassName]];
+//    [self.navigationController pushViewController:vc animated:YES];
+    [self performSegueWithIdentifier:kLogin2MainVC sender:self];
 }
 
 - (void)backgroundImageViewTap:(UITapGestureRecognizer *)gesture{

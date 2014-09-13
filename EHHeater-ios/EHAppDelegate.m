@@ -8,6 +8,8 @@
 
 #import "EHAppDelegate.h"
 #import "ControllerOpenUtil.h"
+#import "EHCommunicator.h"
+#include "generated_example.h"
 
 @implementation EHAppDelegate
 
@@ -18,6 +20,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    //set Up
+//    [EHCommunicator shareInstance];
+//    xpgcGeneratedInit();
+    
     return YES;
 }
 
