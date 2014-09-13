@@ -10,6 +10,7 @@
 
 #define ehCommunicator      ([EHCommunicator shareInstance])
 
+@protocol EHCommunicateDelegate;
 @interface EHCommunicator : NSObject
 
 @property (nonatomic, strong) NSMutableArray *devices;
@@ -19,7 +20,24 @@
 
 + (EHCommunicator *)shareInstance;
 
-
 - (void)turnOnOrOff:(BOOL)on ofDevice:(int)connId;
+
+#pragma mark -- Account Manager
+- (void)registerAccount:(NSString *)account andPassword:(NSString *)password;
+
+/**
+ *  代理
+ */
+@property (nonatomic, weak) id<EHCommunicateDelegate>delegate;
+
+- (void)resignDelegate:(id<EHCommunicateDelegate>)delegate;
+
+@end
+
+
+@protocol EHCommunicateDelegate <NSObject>
+
+@optional
+- (void)communicator:(EHCommunicator *)manager registerResult:(BOOL)success;
 
 @end

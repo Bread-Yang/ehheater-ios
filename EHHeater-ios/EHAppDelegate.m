@@ -22,8 +22,8 @@
     // Override point for customization after application launch.
     
     //set Up
-//    [EHCommunicator shareInstance];
-//    xpgcGeneratedInit();
+    [EHCommunicator shareInstance];
+    xpgcGeneratedInit();
     
     return YES;
 }

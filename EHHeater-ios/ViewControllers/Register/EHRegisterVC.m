@@ -8,6 +8,8 @@
 
 #import "EHRegisterVC.h"
 
+#import "EHCommunicator.h"
+
 @interface EHRegisterVC ()<UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *backgroundBtn;
@@ -86,6 +88,13 @@
     [self resignAllTextField];
 }
 
+- (IBAction)registerButtonPressed:(id)sender {
+    NSString *account = self.accountTextField.text;
+    NSString *password = self.passwordTextField.text;
+    [ehCommunicator registerAccount:account andPassword:password];
+}
+
+
 #pragma mark -- Private 
 
 - (void)resignAllTextField{
@@ -99,6 +108,9 @@
     [textField resignFirstResponder];
     return YES;
 }
+
+#pragma mark -- HUD
+
 
 /*
 #pragma mark - Navigation

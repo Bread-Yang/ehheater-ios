@@ -67,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mFT-nU-Y8U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="532" y="-235"/>
+            <point key="canvasLocation" x="883" y="-415"/>
         </scene>
         <!--Left Right ContainVC-->
         <scene sceneID="hVR-UW-XSE">
@@ -86,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J2c-lW-hts" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="938" y="-241"/>
+            <point key="canvasLocation" x="1289" y="-421"/>
         </scene>
         <!--Main ControlVC-->
         <scene sceneID="Fle-x3-qfr">
@@ -366,7 +366,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZLn-YA-S85" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1303" y="-241"/>
+            <point key="canvasLocation" x="1654" y="-421"/>
         </scene>
         <!--MoreVC-->
         <scene sceneID="cMe-2f-Ngz">
@@ -398,7 +398,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W3J-mT-eKl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1303" y="442"/>
+            <point key="canvasLocation" x="1654" y="262"/>
         </scene>
         <!--BespokeVC-->
         <scene sceneID="lJs-hV-vJE">
@@ -487,7 +487,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cTv-tQ-u1l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1776" y="-241"/>
+            <point key="canvasLocation" x="2127" y="-421"/>
         </scene>
         <!--Bespoke EditVC-->
         <scene sceneID="DoV-Y1-Myl">
@@ -645,7 +645,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vli-g8-pRu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2146" y="-241"/>
+            <point key="canvasLocation" x="2497" y="-421"/>
         </scene>
         <!--Day SelectVC-->
         <scene sceneID="zkI-74-fL8">
@@ -718,7 +718,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zqw-rf-8f8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2503" y="-241"/>
+            <point key="canvasLocation" x="2854" y="-421"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="0yT-na-iy1">
@@ -968,7 +968,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="mdk-Dp-ta1" kind="push" identifier="register2Init" customClass="EHNoAnimatePushSegue" id="tgS-WN-0ef"/>
+                                    <action selector="registerButtonPressed:" destination="3yW-e8-LrS" eventType="touchUpInside" id="KpU-7q-3h6"/>
                                 </connections>
                             </button>
                             <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bpb-7Q-rj4">
@@ -1012,6 +1012,7 @@
                         <outlet property="showPasswordBtn" destination="6SW-0f-qzN" id="Z23-8w-bK1"/>
                         <outlet property="showPasswordLabel" destination="rak-tA-LUK" id="trg-fX-mRG"/>
                         <outlet property="topImageView" destination="U8s-4h-Tv9" id="Vk7-If-d5H"/>
+                        <segue destination="mdk-Dp-ta1" kind="push" identifier="register2Init" id="vZS-gb-xHL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5gx-a6-MJb" userLabel="First Responder" sceneMemberID="firstResponder"/>

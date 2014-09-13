@@ -60,8 +60,8 @@ SingleInstance(EHCommunicator);
     NSLog(@"连接设备成功  %i",connId);
     [self stopResearchTimer];
     
-    SendPasscodeReq(self.connId);
-    SendStateReq(self.connId);
+//    SendPasscodeReq(self.connId);
+//    SendStateReq(self.connId);
 }
 
 - (void)didReceiveDeviceResponse:(NSNotification *)notify{
@@ -87,7 +87,7 @@ SingleInstance(EHCommunicator);
 
 - (void)researchDeviceTimerFired:(NSTimer *)timer{
     [self.devices removeAllObjects];
-    xpgcFindDevice();
+//    xpgcFindDevice();
 }
 
 - (void)startResearchTimer{
@@ -107,6 +107,29 @@ SingleInstance(EHCommunicator);
 
 - (void)turnOnOrOff:(BOOL)on ofDevice:(int)connId{
     SendOnOffReq(connId, on);
+}
+
+#pragma mark -- Account Manager
+
+- (void)registerAccount:(NSString *)account andPassword:(NSString *)password{
+//    XPG_RESULT result = xpgcRegister("987654321", "123456789");
+    XPG_RESULT result = xpgcRegister([account UTF8String], [password UTF8String]);
+    BOOL success = NO;
+    if (result == ERROR_NONE) {
+        success = YES;
+    }
+    if (self.delegate && [self.delegate respondsToSelector:@selector(communicator:registerResult:)]) {
+        [self.delegate communicator:self registerResult:success];
+    }
+    EHLog(@"注册账号 = %@",success ? @"成功" : @"失败");
+}
+
+#pragma mark -- Delegate
+
+- (void)resignDelegate:(id<EHCommunicateDelegate>)delegate{
+    if (self.delegate == delegate) {
+        self.delegate = nil;
+    }
 }
 
 @end

@@ -67,6 +67,10 @@ void onPasscodeeqExample(size_t count, PasscodeResp_t * pPasscodeResp, int nConn
     }
 }
 
+void onUserRegisterResp(size_t count, UserRegisterResp_t * pUserRegisterResp, int nConnId){
+    logMsg(LV_INFO, "%s(), TODO: had not processed as count",__func__);
+    printf("registerResp:%i connID = %i",pUserRegisterResp->result,nConnId);
+}
 
 void xpgcGeneratedInit()
 {
@@ -80,6 +84,7 @@ void xpgcGeneratedInit()
     contextGenerated.onStateReq = onStateReqExample;
     contextGenerated.onPasscodeResp = onPasscodeeqExample;
     
+    contextGenerated.onUserRegisterResp = onUserRegisterResp;
 }
 
 #ifdef SDK_CLI
