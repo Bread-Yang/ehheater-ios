@@ -8,6 +8,7 @@
 
 #import "EHConnectNetVC.h"
 #import "LDNetworkUtil.h"
+#import "EasyLink.h"
 
 @interface EHConnectNetVC ()<UITextFieldDelegate>
 
@@ -73,6 +74,15 @@
         [self.navigationController popViewControllerAnimated:YES];
     }
 }
+
+#pragma mark -- Action
+
+- (IBAction)confirmButtonPressed:(id)sender {
+    NSString *ssID = self.wifiTextField.text;
+    NSString *psw = self.passwordTextField.text;
+    
+}
+
 
 #pragma mark -- UITextfieldDelegate
 

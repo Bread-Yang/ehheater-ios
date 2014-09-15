@@ -62,7 +62,7 @@
                         <outlet property="ehStatusbar" destination="UYD-xC-XBb" id="gEt-bS-hfo"/>
                         <outlet property="navBarView" destination="Iqi-KK-Hil" id="HBr-xO-7iI"/>
                         <outlet property="navTitleLabel" destination="7ep-zK-8VE" id="vvw-tq-EBy"/>
-                        <segue destination="Sue-ga-bxq" kind="push" identifier="turnOn2ControlVC" id="p3Z-Rv-mFl"/>
+                        <segue destination="Sue-ga-bxq" kind="push" identifier="turnOn2ControlVC" id="SHv-yx-fTd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mFT-nU-Y8U" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1254,6 +1254,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="confirmButtonPressed:" destination="JOa-Rf-VMn" eventType="touchUpInside" id="oe1-YN-Moz"/>
                                     <segue destination="pr3-gn-2zP" kind="push" id="GIh-nU-Ysu"/>
                                 </connections>
                             </button>

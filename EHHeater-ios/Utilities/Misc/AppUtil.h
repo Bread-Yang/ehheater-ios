@@ -14,4 +14,6 @@
 
 + (NSString*)byteArray2String:(XpgPacket *) pPacket;
 
++ (NSData *)byteArray2Data:(XpgPacket *)pPacket;
+
 @end

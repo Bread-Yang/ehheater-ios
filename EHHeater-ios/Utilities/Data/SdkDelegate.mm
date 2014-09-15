@@ -67,10 +67,11 @@ int SdkDelegate::onTcpPacket(XpgPacket * pPacket, int connId)
 {
     printf("%s()\n", __func__);
     
-    if (pPacket && pPacket->dataLen>0)
+    if (pPacket && pPacket->dataLen==21)
     {
-        NSString *data = [AppUtil byteArray2String:pPacket];
-        
+//        NSString *data = [AppUtil byteArray2String:pPacket];
+        NSData *data = [NSData dataWithBytes:pPacket->data length:pPacket->dataLen];
+        NSLog(@"设备反馈  = %@",[data description]);
         [[NSNotificationCenter defaultCenter] postNotificationName:kNotify_DidReceiceResponse object:data];
     }
     

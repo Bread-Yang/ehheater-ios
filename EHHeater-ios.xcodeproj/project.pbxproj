@@ -1496,7 +1496,7 @@
 				GCC_PREFIX_HEADER = "EHHeater-ios/EHHeater-ios-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"\"${PODS_ROOT}/Headers\"",
-					"\"${PODS_ROOT}/Headers/MMProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/MBProgressHUD\"",
 					"\"${PODS_ROOT}/Headers/Reachability\"",
 					"\"$(SRCROOT)/SDK\"/**",
 					"\"$(SRCROOT)/xUtility\"/**",
@@ -1532,7 +1532,7 @@
 				GCC_PREFIX_HEADER = "EHHeater-ios/EHHeater-ios-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"\"${PODS_ROOT}/Headers\"",
-					"\"${PODS_ROOT}/Headers/MMProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/MBProgressHUD\"",
 					"\"${PODS_ROOT}/Headers/Reachability\"",
 					"\"$(SRCROOT)/SDK\"/**",
 					"\"$(SRCROOT)/xUtility\"/**",

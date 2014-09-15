@@ -16,7 +16,7 @@
 @property (nonatomic, strong) NSMutableArray *devices;
 @property (nonatomic, assign) int connId;
 @property (assign, nonatomic) NSString* passcode;
-@property (nonatomic, copy) NSString *lastResponse;
+@property (nonatomic, strong) NSData *lastResponse;
 
 + (EHCommunicator *)shareInstance;
 
@@ -24,6 +24,11 @@
 
 #pragma mark -- Account Manager
 - (void)registerAccount:(NSString *)account andPassword:(NSString *)password;
+
+/**
+ *  Easylink
+ */
+- (void)sendEasylink:(NSString *)ssid andPassword:(NSString *)psw;
 
 /**
  *  代理

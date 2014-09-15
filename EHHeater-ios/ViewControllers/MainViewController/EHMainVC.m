@@ -22,7 +22,7 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-//    [self performSegueWithIdentifier:kTurnOn_2_Control sender:self];
+    [self performSegueWithIdentifier:kTurnOn_2_Control sender:self];
 }
 
 - (void)viewDidLoad
@@ -68,21 +68,25 @@
 #pragma mark -- Action
 
 - (IBAction)turnOnDevicePressed:(id)sender {
-//    [deviceMG.currentHeater sendTurnOnCommand];
-    //test
-    [self performSegueWithIdentifier:kTurnOn_2_Control sender:self];
+    if (deviceMG.currentHeater.isOn) {
+//        [self performSegueWithIdentifier:kTurnOn_2_Control sender:self];
+        UIViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"EHLeftRightContainVC"];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else{
+        [deviceMG.currentHeater sendTurnOnCommand];
+    }
 }
 
 #pragma makr -- Storyboard segue
 
-//- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
-//    BOOL result = YES;
-////    if ([identifier isEqualToString:kTurnOn_2_Control]) {
-////        BOOL isOn = deviceMG.currentHeater.isOn;
-////        result = isOn;
-////    }
-//    return result;
-//}
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
+    BOOL result = YES;
+    if ([identifier isEqualToString:kTurnOn_2_Control]) {
+        BOOL isOn = deviceMG.currentHeater.isOn;
+        result = isOn;
+    }
+    return result;
+}
 
 #pragma mark -- EHElecHeaterDelegate
 

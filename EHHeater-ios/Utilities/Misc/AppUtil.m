@@ -12,7 +12,13 @@
 
 + (NSString *)byteArray2String:(XpgPacket *) pPacket
 {
-     NSData *data = [NSData dataWithBytes:pPacket->data length:pPacket->dataLen];
+     NSData *data = [AppUtil byteArray2Data:pPacket];
     return [data description];
 }
+
++ (NSData *)byteArray2Data:(XpgPacket *)pPacket{
+    NSData *data = [NSData dataWithBytes:pPacket->data length:pPacket->dataLen];
+    return data;
+}
+
 @end

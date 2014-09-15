@@ -13,6 +13,7 @@
 #import "EHDeviceFeedbackService.h"
 #import "EHDeviceManager.h"
 #include "utils.h"
+#import "EasyLink.h"
 
 @interface EHCommunicator(){
     SdkDelegate *_pDelegate;
@@ -48,9 +49,10 @@ SingleInstance(EHCommunicator);
     [self.devices addObject:value];
     XpgEndpoint *point = (XpgEndpoint *)[value pointerValue];
     NSString *macAdr = [NSString stringWithUTF8String:point->szMac];
+    NSLog(@"找到设备 mac地址 : %s",point->szMac);
     if ([macAdr isEqualToString:kTemp_Connect_MAC]) {
         point->port = kTemp_Port;
-        xpgcConnect(*point);
+        xpgcConnectAsync(*point);
     }
 }
 
@@ -60,15 +62,15 @@ SingleInstance(EHCommunicator);
     NSLog(@"连接设备成功  %i",connId);
     [self stopResearchTimer];
     
-//    SendPasscodeReq(self.connId);
-//    SendStateReq(self.connId);
+    [NSThread sleepForTimeInterval:2];
+    SendPasscodeReq(self.connId); //传passcode后，才可控制？
+//    SendStateReq(self.connId);  //状态查询？
 }
 
 - (void)didReceiveDeviceResponse:(NSNotification *)notify{
-    NSString *log = [notify object];
-    self.lastResponse = log;
-    NSData *data  = [NSData dataWithBytes:[self.lastResponse UTF8String] length:self.lastResponse.length];
-    [deviceMG.currentHeater refreshStatusByData:data];
+    NSData *resp = [notify object];
+    self.lastResponse = resp;
+    [deviceMG.currentHeater refreshStatusByData:resp];
 }
 
 - (void)addNotificationObserver{
@@ -87,7 +89,7 @@ SingleInstance(EHCommunicator);
 
 - (void)researchDeviceTimerFired:(NSTimer *)timer{
     [self.devices removeAllObjects];
-//    xpgcFindDevice();
+    xpgcFindDevice();
 }
 
 - (void)startResearchTimer{
@@ -106,11 +108,14 @@ SingleInstance(EHCommunicator);
 #pragma mark -- Device Control
 
 - (void)turnOnOrOff:(BOOL)on ofDevice:(int)connId{
-    SendOnOffReq(connId, on);
+    Byte byte = on ? 0x01 : 0x00;
+    SendOnOffReq(connId, byte);
 }
 
 #pragma mark -- Account Manager
-
+/**
+ *  账号
+ */
 - (void)registerAccount:(NSString *)account andPassword:(NSString *)password{
 //    XPG_RESULT result = xpgcRegister("987654321", "123456789");
     XPG_RESULT result = xpgcRegister([account UTF8String], [password UTF8String]);
@@ -122,6 +127,22 @@ SingleInstance(EHCommunicator);
         [self.delegate communicator:self registerResult:success];
     }
     EHLog(@"注册账号 = %@",success ? @"成功" : @"失败");
+}
+
+/**
+ *  Easylink
+ */
+#pragma mark -- Easylink
+
+- (void)sendEasylink:(NSString *)ssid andPassword:(NSString *)psw{
+    [[EasyLink shareInstance] startWithSSID:ssid password:psw];
+    [self performSelector:@selector(stopEasylink) withObject:nil afterDelay:30];
+}
+
+- (void)stopEasylink{
+    if ([[EasyLink shareInstance] isSearching]) {
+        [[EasyLink shareInstance] stop];
+    }
 }
 
 #pragma mark -- Delegate

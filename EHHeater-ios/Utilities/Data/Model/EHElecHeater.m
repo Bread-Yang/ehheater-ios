@@ -36,7 +36,7 @@
 - (void)refreshStatusByData:(NSData *)data{
     BOOL isOn = [deviceFeedback isHeaterOn:data];
     [self changeHeaterOnOffStatue:isOn];
-    NSLog(@"设备状态 : %@",isOn ? @"开" : @"关 ");
+    NSLog(@"设备状态 : %@  data = %@",isOn ? @"开" : @"关 ",[data description]);
 }
 
 #pragma mark -- Private
