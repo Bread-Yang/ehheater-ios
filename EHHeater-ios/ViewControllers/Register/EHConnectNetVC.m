@@ -54,12 +54,12 @@
 - (void)configerSubViews{
     [super configerSubViews];
     //国际化
-    self.title = i18n_Text(EH_Init_NAV_Title);
-    [self.tipLabel1 setText:i18n_Text(EH_Wifi_Tip1)];
-    [self.tipLabel2 setText:i18n_Text(EH_Wifi_Tip2)];
-    [self.wifiNameTitleLabel setText:i18n_Text(EH_Wifi_NameTitle)];
-    [self.passwordTitleLabel setText:i18n_Text(EH_LoginPassword_Placeholder)];
-    [self.sureButton setAllStatusTitle:i18n_Text(EH_Sure)];
+    self.title = NSLocalizedString(EH_Init_NAV_Title, nil);
+    [self.tipLabel1 setText:NSLocalizedString(EH_Wifi_Tip1, nil)];
+    [self.tipLabel2 setText:NSLocalizedString(EH_Wifi_Tip2, nil)];
+    [self.wifiNameTitleLabel setText:NSLocalizedString(EH_Wifi_NameTitle, nil)];
+    [self.passwordTitleLabel setText:NSLocalizedString(EH_LoginPassword_Placeholder, nil)];
+    [self.sureButton setAllStatusTitle:NSLocalizedString(EH_Sure, nil)];
     
     NSString *currentWifiName = [ldNetworkUtil connectedWifiName];
     [self.wifiTextField setText:currentWifiName];

@@ -29,8 +29,8 @@
 }
 
 - (void)awakeFromNib{
-    [self.tipLabel setText:i18n_Text(EH_Init_NotConnect_Tip)];
-    [self.cancelButton setAllStatusTitle:i18n_Text(EH_Cancel)];
+    [self.tipLabel setText:NSLocalizedString(EH_Init_NotConnect_Tip, nil)];
+    [self.cancelButton setAllStatusTitle:NSLocalizedString(EH_Cancel, nil)];
 }
 
 - (IBAction)cancelButtonPressed:(id)sender {

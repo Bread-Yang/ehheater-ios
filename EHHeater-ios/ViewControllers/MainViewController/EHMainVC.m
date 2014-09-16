@@ -29,7 +29,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self setTitle:i18n_Text(EH_Main_NAV_Title)];
+    [self setTitle:NSLocalizedString(EH_Main_NAV_Title, nil)];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

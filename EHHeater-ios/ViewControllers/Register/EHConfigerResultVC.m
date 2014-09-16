@@ -45,7 +45,7 @@
 - (void)configerSubViews{
     [super configerSubViews];
     //国际化
-    self.title = i18n_Text(EH_Init_NAV_Title);
+    self.title = NSLocalizedString(EH_Init_NAV_Title, nil);
     [self configerDetailTextView];
 }
 

@@ -57,12 +57,12 @@
     [super configerSubViews];
     
     //国际化
-    self.title = i18n_Text(EH_RG_NAV_Title);
-    [self.configerTipLabel setText:i18n_Text(EH_RGTip_String)];
-    [self.accountTextField setPlaceholder:i18n_Text(EH_RGAccount_Placeholder)];
-    [self.passwordTextField setPlaceholder:i18n_Text(EH_RGPassword_Placeholder)];
-    [self.showPasswordLabel setText:i18n_Text(EH_RGShowPassword_String)];
-    [self.nextButton setAllStatusTitle:i18n_Text(EH_RGNextButton_Title)];
+    self.title = NSLocalizedString(EH_RG_NAV_Title, nil);
+    [self.configerTipLabel setText:NSLocalizedString(EH_RGTip_String, nil)];
+    [self.accountTextField setPlaceholder:NSLocalizedString(EH_RGAccount_Placeholder, nil)];
+    [self.passwordTextField setPlaceholder:NSLocalizedString(EH_RGPassword_Placeholder, nil)];
+    [self.showPasswordLabel setText:NSLocalizedString(EH_RGShowPassword_String, nil)];
+    [self.nextButton setAllStatusTitle:NSLocalizedString(EH_RGNextButton_Title, nil)];
     
     [self.passwordTextField setSecureTextEntry:!self.showPasswordBtn.selected];
 }

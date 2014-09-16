@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		534E6A1119C4209600AD30F0 /* libxUtility.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 534E6A1019C4209600AD30F0 /* libxUtility.a */; };
 		5354EF8C19C0285800C885D6 /* EHBespokeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354EF8B19C0285800C885D6 /* EHBespokeVC.m */; };
 		5354EF8F19C028AF00C885D6 /* EHBespokeEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354EF8E19C028AF00C885D6 /* EHBespokeEditVC.m */; };
 		5354EF9219C0293B00C885D6 /* EHDaySelectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354EF9119C0293B00C885D6 /* EHDaySelectVC.m */; };
@@ -127,11 +126,13 @@
 		53D6387519B9ADE500EE12EB /* EHLeftRightContainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D6387419B9ADE500EE12EB /* EHLeftRightContainVC.m */; };
 		53D6387A19B9B9DC00EE12EB /* EHMoreListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D6387819B9B9DC00EE12EB /* EHMoreListCell.m */; };
 		53D6387B19B9B9DC00EE12EB /* EHMoreListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53D6387919B9B9DC00EE12EB /* EHMoreListCell.xib */; };
+		555390B019C6F7BE00F64F51 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 555390B219C6F7BE00F64F51 /* Localizable.strings */; };
+		55ECF5BE19C6EF48008FFA38 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55ECF5BD19C6EF48008FFA38 /* SystemConfiguration.framework */; };
+		55ECF5C319C6F72C008FFA38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55ECF5C519C6F72C008FFA38 /* InfoPlist.strings */; };
 		A565765319AAE0E100E16C4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A565765219AAE0E100E16C4B /* Foundation.framework */; };
 		A565765519AAE0E100E16C4B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A565765419AAE0E100E16C4B /* CoreGraphics.framework */; };
 		A565765719AAE0E100E16C4B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A565765619AAE0E100E16C4B /* UIKit.framework */; };
 		A565765919AAE0E100E16C4B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A565765819AAE0E100E16C4B /* CoreData.framework */; };
-		A565765F19AAE0E100E16C4B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A565765D19AAE0E100E16C4B /* InfoPlist.strings */; };
 		A565766119AAE0E100E16C4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A565766019AAE0E100E16C4B /* main.m */; };
 		A565766519AAE0E100E16C4B /* EHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A565766419AAE0E100E16C4B /* EHAppDelegate.m */; };
 		A565766819AAE0E100E16C4B /* EHHeater_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A565766619AAE0E100E16C4B /* EHHeater_ios.xcdatamodeld */; };
@@ -145,7 +146,6 @@
 		A565768A19AAE46200E16C4B /* EHHeaterBasicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A565768919AAE46200E16C4B /* EHHeaterBasicVC.m */; };
 		A565769019AAE72F00E16C4B /* EHMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A565768E19AAE72F00E16C4B /* EHMainVC.m */; };
 		A565769719AB19F400E16C4B /* ControllerOpenUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A565769619AB19F400E16C4B /* ControllerOpenUtil.m */; };
-		A5D087CA19AC8F59002300C0 /* localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5D087CC19AC8F59002300C0 /* localization.strings */; };
 		A5D67EF819AB3E08008EBB43 /* NSObject+XPG.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D67EF719AB3E08008EBB43 /* NSObject+XPG.m */; };
 		A5D67EFB19AB4054008EBB43 /* UIView+XPG.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D67EFA19AB4054008EBB43 /* UIView+XPG.m */; };
 		A5D67EFE19AB405E008EBB43 /* UIColor+XPG.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D67EFD19AB405E008EBB43 /* UIColor+XPG.m */; };
@@ -412,13 +412,17 @@
 		53D6387719B9B9DC00EE12EB /* EHMoreListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHMoreListCell.h; sourceTree = "<group>"; };
 		53D6387819B9B9DC00EE12EB /* EHMoreListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHMoreListCell.m; sourceTree = "<group>"; };
 		53D6387919B9B9DC00EE12EB /* EHMoreListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EHMoreListCell.xib; sourceTree = "<group>"; };
+		555390B119C6F7BE00F64F51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		555390B319C6F7BF00F64F51 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		55ECF5BD19C6EF48008FFA38 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		55ECF5C419C6F72C008FFA38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		55ECF5C619C6F72E008FFA38 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		A565764F19AAE0E100E16C4B /* EHHeater-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EHHeater-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A565765219AAE0E100E16C4B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A565765419AAE0E100E16C4B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A565765619AAE0E100E16C4B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A565765819AAE0E100E16C4B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A565765C19AAE0E100E16C4B /* EHHeater-ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EHHeater-ios-Info.plist"; sourceTree = "<group>"; };
-		A565765E19AAE0E100E16C4B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A565766019AAE0E100E16C4B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A565766219AAE0E100E16C4B /* EHHeater-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EHHeater-ios-Prefix.pch"; sourceTree = "<group>"; };
 		A565766319AAE0E100E16C4B /* EHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHAppDelegate.h; sourceTree = "<group>"; };
@@ -439,10 +443,7 @@
 		A565769619AB19F400E16C4B /* ControllerOpenUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerOpenUtil.m; sourceTree = "<group>"; };
 		A565769819AB3A8400E16C4B /* xUtility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = xUtility.framework; path = "EHHeater-ios/Utilities/xUtility/build/Debug-iphoneos/xUtility.framework"; sourceTree = "<group>"; };
 		A5D087BE19AC62C2002300C0 /* EHLocalizableKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHLocalizableKeys.h; sourceTree = "<group>"; };
-		A5D087C219AC632D002300C0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		A5D087C419AC632D002300C0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		A5D087CB19AC8F59002300C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/localization.strings; sourceTree = "<group>"; };
-		A5D087CD19AC8F5A002300C0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/localization.strings"; sourceTree = "<group>"; };
 		A5D67EF619AB3E08008EBB43 /* NSObject+XPG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+XPG.h"; sourceTree = "<group>"; };
 		A5D67EF719AB3E08008EBB43 /* NSObject+XPG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XPG.m"; sourceTree = "<group>"; };
 		A5D67EF919AB4054008EBB43 /* UIView+XPG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XPG.h"; sourceTree = "<group>"; };
@@ -461,7 +462,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				534E6A1119C4209600AD30F0 /* libxUtility.a in Frameworks */,
+				55ECF5BE19C6EF48008FFA38 /* SystemConfiguration.framework in Frameworks */,
 				53D2991719B801890081224A /* QuartzCore.framework in Frameworks */,
 				5397802119BEB3BB00F77D7F /* libXpgConnectSdk.a in Frameworks */,
 				A565765519AAE0E100E16C4B /* CoreGraphics.framework in Frameworks */,
@@ -960,6 +961,7 @@
 		A565765119AAE0E100E16C4B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				55ECF5BD19C6EF48008FFA38 /* SystemConfiguration.framework */,
 				534E6A1019C4209600AD30F0 /* libxUtility.a */,
 				534E6A0E19C3FAAC00AD30F0 /* libxUtility.a */,
 				53612FBA19C2E34000A4AAE0 /* libxUtility.a */,
@@ -995,13 +997,13 @@
 		A565765B19AAE0E100E16C4B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				555390B219C6F7BE00F64F51 /* Localizable.strings */,
+				55ECF5C519C6F72C008FFA38 /* InfoPlist.strings */,
 				A565765C19AAE0E100E16C4B /* EHHeater-ios-Info.plist */,
-				A565765D19AAE0E100E16C4B /* InfoPlist.strings */,
 				A565766019AAE0E100E16C4B /* main.m */,
 				A565766219AAE0E100E16C4B /* EHHeater-ios-Prefix.pch */,
 				A565769219AAF17900E16C4B /* EHConstant.h */,
 				A5D087BE19AC62C2002300C0 /* EHLocalizableKeys.h */,
-				A5D087CC19AC8F59002300C0 /* localization.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1218,6 +1220,7 @@
 				5354EFA119C0357100C885D6 /* EHPowerSetCell.xib in Resources */,
 				5354EFAD19C0375B00C885D6 /* radio_unchecked.png in Resources */,
 				5354EFE419C15BC800C885D6 /* wave1.png in Resources */,
+				55ECF5C319C6F72C008FFA38 /* InfoPlist.strings in Resources */,
 				5354F04A19C1A8BE00C885D6 /* icon_menu.png in Resources */,
 				5354EFB119C0376500C885D6 /* radio_unchecked@2x.png in Resources */,
 				5354EFC019C1583600C885D6 /* home_yuan_tiao.png in Resources */,
@@ -1229,6 +1232,7 @@
 				5354EFF419C15BC800C885D6 /* wave17.png in Resources */,
 				5354EFEC19C15BC800C885D6 /* wave9.png in Resources */,
 				5371393B19B7162E00878CB0 /* Main.storyboard in Resources */,
+				555390B019C6F7BE00F64F51 /* Localizable.strings in Resources */,
 				5354EFB819C04E5000C885D6 /* home_yuan_bg2.png in Resources */,
 				5354F00A19C170A400C885D6 /* wave1@2x.png in Resources */,
 				5354EFF619C15BC800C885D6 /* wave19.png in Resources */,
@@ -1236,13 +1240,11 @@
 				5354EF9B19C0326600C885D6 /* EHPowerSetView.xib in Resources */,
 				5354F02719C1A6A300C885D6 /* icon_w.png in Resources */,
 				5354F02319C1A65300C885D6 /* icon_temperature@2x.png in Resources */,
-				A5D087CA19AC8F59002300C0 /* localization.strings in Resources */,
 				5354EFB019C0376500C885D6 /* radio_checked@2x.png in Resources */,
 				5354F04219C1A74B00C885D6 /* icon_auto@2x.png in Resources */,
 				5354F00E19C170A400C885D6 /* wave5@2x.png in Resources */,
 				5354F04B19C1A8BE00C885D6 /* icon_shut.png in Resources */,
 				5354EFEA19C15BC800C885D6 /* wave7.png in Resources */,
-				A565765F19AAE0E100E16C4B /* InfoPlist.strings in Resources */,
 				5354F02619C1A6A300C885D6 /* icon_timeing.png in Resources */,
 				5354F01519C170A400C885D6 /* wave12@2x.png in Resources */,
 				5354EFED19C15BC800C885D6 /* wave10.png in Resources */,
@@ -1382,11 +1384,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A565765D19AAE0E100E16C4B /* InfoPlist.strings */ = {
+		555390B219C6F7BE00F64F51 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A565765E19AAE0E100E16C4B /* en */,
-				A5D087C219AC632D002300C0 /* zh-Hans */,
+				555390B119C6F7BE00F64F51 /* en */,
+				555390B319C6F7BF00F64F51 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		55ECF5C519C6F72C008FFA38 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55ECF5C419C6F72C008FFA38 /* en */,
+				55ECF5C619C6F72E008FFA38 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1398,15 +1409,6 @@
 				A5D087C419AC632D002300C0 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		A5D087CC19AC8F59002300C0 /* localization.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A5D087CB19AC8F59002300C0 /* en */,
-				A5D087CD19AC8F5A002300C0 /* zh-Hans */,
-			);
-			name = localization.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1428,7 +1430,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 绍鸿 区 (339DR2MNY4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 绍鸿 区 (339DR2MNY4)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1466,7 +1469,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 绍鸿 区 (339DR2MNY4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 绍鸿 区 (339DR2MNY4)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1490,7 +1494,8 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EHHeater-ios/EHHeater-ios-Prefix.pch";
@@ -1499,7 +1504,6 @@
 					"\"${PODS_ROOT}/Headers/MBProgressHUD\"",
 					"\"${PODS_ROOT}/Headers/Reachability\"",
 					"\"$(SRCROOT)/SDK\"/**",
-					"\"$(SRCROOT)/xUtility\"/**",
 				);
 				INFOPLIST_FILE = "EHHeater-ios/EHHeater-ios-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -1507,11 +1511,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/SDK/3rd/EasyLink",
 					"$(PROJECT_DIR)/SDK",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/EHHeater-ios-cthdlqximbcurkfllzrwqmklbxes/Build/Products/Debug-iphoneos",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "EDA3252A-19F2-4CE5-A402-10494A601574";
+				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
 				VALID_ARCHS = "armv7s armv7";
 				WRAPPER_EXTENSION = app;
@@ -1526,7 +1529,8 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EHHeater-ios/EHHeater-ios-Prefix.pch";
@@ -1535,7 +1539,6 @@
 					"\"${PODS_ROOT}/Headers/MBProgressHUD\"",
 					"\"${PODS_ROOT}/Headers/Reachability\"",
 					"\"$(SRCROOT)/SDK\"/**",
-					"\"$(SRCROOT)/xUtility\"/**",
 				);
 				INFOPLIST_FILE = "EHHeater-ios/EHHeater-ios-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -1543,10 +1546,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/SDK/3rd/EasyLink",
 					"$(PROJECT_DIR)/SDK",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/EHHeater-ios-cthdlqximbcurkfllzrwqmklbxes/Build/Products/Debug-iphoneos",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "EDA3252A-19F2-4CE5-A402-10494A601574";
+				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
 				VALID_ARCHS = "armv7s armv7";
 				WRAPPER_EXTENSION = app;

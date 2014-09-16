@@ -63,14 +63,14 @@
 - (void)configerSubViews{
     [super configerSubViews];
     //国际化
-    self.title = i18n_Text(EH_Init_NAV_Title);
-    [self.nextButton setAllStatusTitle:i18n_Text(EH_RGNextButton_Title)];
+    self.title = NSLocalizedString(EH_Init_NAV_Title, nil);
+    [self.nextButton setAllStatusTitle:NSLocalizedString(EH_RGNextButton_Title, nil)];
     [self configerTipLabel];
 }
 
 - (void)configerTipLabel{
-    NSString *tipString = i18n_Text(EH_Init_TipString);
-    NSString *lightString = i18n_Text(EH_Init_TipHightlightString);
+    NSString *tipString = NSLocalizedString(EH_Init_TipString, nil);
+    NSString *lightString = NSLocalizedString(EH_Init_TipHightlightString, nil);
     NSMutableAttributedString *attribute = [[NSMutableAttributedString alloc] initWithString:tipString];
     NSRange fullRange = [tipString rangeOfString:tipString];
     NSRange hightlightRange = [tipString rangeOfString:lightString];

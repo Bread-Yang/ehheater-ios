@@ -47,7 +47,7 @@
 - (void)configerSubViews{
     [super configerSubViews];
     //国际化
-    self.title = i18n_Text(EH_Init_NAV_Title);
+    self.title = NSLocalizedString(EH_Init_NAV_Title, nil);
     [self configerTipLabel];
 }
 
@@ -64,10 +64,10 @@
 #pragma mark -- Pirvate
 
 - (void)configerTipLabel{
-    NSString *tipString = i18n_Text(EH_ConfigerTipString);
+    NSString *tipString = NSLocalizedString(EH_ConfigerTipString, nil);
     NSMutableAttributedString *attribute = [[NSMutableAttributedString alloc] initWithString:tipString];
-    NSString *lightStr1 = i18n_Text(EH_ConfigerTipHightlight1);
-    NSString *lightStr2 = i18n_Text(EH_ConfigerTipHightlight2);
+    NSString *lightStr1 = NSLocalizedString(EH_ConfigerTipHightlight1, nil);
+    NSString *lightStr2 = NSLocalizedString(EH_ConfigerTipHightlight2, nil);
     NSRange fullRange = [tipString rangeOfString:tipString];
     NSRange range1 = [tipString rangeOfString:lightStr1];
     NSRange range2 = [tipString rangeOfString:lightStr2];

@@ -84,12 +84,12 @@
 
 - (void)setUpListData{
     if (!self.listData) {
-        self.listData = @[i18n_Text(EH_More_SwitchHeater),
-                          i18n_Text(EH_More_AccountManage),
-                          i18n_Text(EH_More_HeaterManage),
-                          i18n_Text(EH_More_RemindSetting),
-                          i18n_Text(EH_More_Help),
-                          i18n_Text(EH_More_Abount)];
+        self.listData = @[NSLocalizedString(EH_More_SwitchHeater, nil),
+                          NSLocalizedString(EH_More_AccountManage, nil),
+                          NSLocalizedString(EH_More_HeaterManage, nil),
+                          NSLocalizedString(EH_More_RemindSetting, nil),
+                          NSLocalizedString(EH_More_Help, nil),
+                          NSLocalizedString(EH_More_Abount, nil)];
     }
     [self.tableView reloadData];
 }

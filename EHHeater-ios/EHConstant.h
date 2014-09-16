@@ -12,7 +12,7 @@
 /**
  *     Import
  */
-#import <xUtility.h>
+//#import <xUtility.h>
 #import "EHLocalizableKeys.h"
 #import "iOSTool.h"
 
@@ -53,5 +53,21 @@
  */
 #define kTemp_Connect_MAC           @"C8934642E4C7"     //默认的链接的热水器wifi的mac地址
 #define kTemp_Port                  12416
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// 实现单例宏
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+#define SingleInstance(Clazz)           \
++(Clazz*)shareInstance {                \
+\
+static Clazz *instance = nil;       \
+static dispatch_once_t _once;       \
+\
+dispatch_once(&_once, ^{            \
+instance = [[self alloc] init]; \
+});                                 \
+return instance;                    \
+}
 
 #endif

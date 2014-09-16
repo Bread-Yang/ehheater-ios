@@ -54,11 +54,11 @@
 - (void)configerSubViews{
     [super configerSubViews];
     //国际化
-    [self.accountTextField setPlaceholder:i18n_Text(EH_LoginAccount_Placeholder)];
-    [self.passwordTextField setPlaceholder:i18n_Text(EH_LoginPassword_Placeholder)];
-    [self.loginButton setAllStatusTitle:i18n_Text(EH_LoginButton_Title)];
-    [self.configerTipLabel setText:i18n_Text(EH_ConfigerTip_String)];
-    [self.configerButton setAllStatusTitle:i18n_Text(EH_ConfigerButton_Title)];
+    [self.accountTextField setPlaceholder:NSLocalizedString(EH_LoginAccount_Placeholder, nil)];
+    [self.passwordTextField setPlaceholder:NSLocalizedString(EH_LoginPassword_Placeholder, nil)];
+    [self.loginButton setAllStatusTitle:NSLocalizedString(EH_LoginButton_Title, nil)];
+    [self.configerTipLabel setText:NSLocalizedString(EH_ConfigerTip_String, nil)];
+    [self.configerButton setAllStatusTitle:NSLocalizedString(EH_ConfigerButton_Title, nil)];
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(backgroundImageViewTap:)];
     [self.bgImageView addGestureRecognizer:tap];
